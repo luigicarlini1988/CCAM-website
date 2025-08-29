@@ -1,0 +1,484 @@
+:root {
+    --bs-body-font-family: "Onest", sans-serif;
+    --bs-body-line-height: 1.625rem;
+
+    --radius-40: 2.5rem;
+    --radius-32: 2rem;
+    --radius-28: 1.75rem;
+    --radius-24: 1.5rem;
+    --radius-20: 1.25rem;
+    --radius-18: 1.125rem;
+    --radius-999: 999rem;
+}
+
+
+
+.radius-40 {
+    border-radius: var(--radius-40);
+}
+
+.radius-32 {
+    border-radius: var(--radius-32);
+}
+
+.radius-28 {
+    border-radius: var(--radius-28);
+}
+
+.radius-24 {
+    border-radius: var(--radius-24);
+}
+
+.radius-20 {
+    border-radius: var(--radius-20);
+}
+
+.radius-18 {
+    border-radius: var(--radius-18);
+}
+
+.radius-999 {
+    border-radius: var(--radius-999);
+}
+
+.title-42 {
+    font-size: 2.625rem;
+    line-height: 3rem;
+    font-weight: 600;
+}
+
+.title-36 {
+    font-size: 2.25rem;
+    line-height: 2.875rem;
+    font-weight: 600;
+}
+
+.title-32 {
+    font-size: 2rem;
+    line-height: 2.25rem;
+    font-weight: 600;
+}
+
+.title-26 {
+    font-size: 1.625rem;
+    line-height: 2rem;
+    font-weight: 600;
+}
+
+.title-22 {
+    font-size: 1.375rem;
+    line-height: 1.625rem;
+    font-weight: 600;
+}
+
+.title-20 {
+    font-size: 1.25rem;
+    line-height: 1.375rem;
+    font-weight: 600;
+}
+
+.title-20-var {
+    font-size: 1.25rem;
+    line-height: 1.375rem;
+    font-weight: 300;
+}
+
+.title-16 {
+    font-size: 1rem;
+    line-height: 1.375rem;
+    font-weight: 600;
+}
+
+.title-14 {
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+    font-weight: 600;
+}
+
+.body-14 {
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+}
+
+.body-12 {
+    font-size: 0.75rem;
+    line-height: 1rem;
+}
+
+.container-ccam {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1040px;
+}
+
+.container-ccam-2 {
+    max-width: 1040px;
+}
+
+.btn {
+    white-space: nowrap;
+    height: max-content;
+}
+
+.btn svg {
+    height: 22px;
+    width: 22px;
+    stroke-width: 2px;
+}
+
+.btn svg path {
+    stroke-width: 2px;
+}
+
+.btn-secondary:hover {
+    background: var(--bs-primary);
+    border-color: var(--bs-primary);
+}
+
+.btn-secondary.var:hover {
+    color: var(--bs-secondary);
+    background-color: var(--bs-ccam-offwhite);
+    border-color: var(--bs-ccam-offwhite);
+}
+
+.btn.icon-only {
+    padding: 0.45rem
+}
+
+.btn.trasp {
+    background-color: rgb(from var(--bs-secondary) r g b / 20%);
+    border-color: rgb(from var(--bs-secondary) r g b / 0%);
+    color: var(--bs-white);
+}
+
+.btn.trasp:hover {
+    background-color: var(--bs-secondary);
+    border-color: var(--bs-secondary);
+}
+
+.btn.ghost {
+    color: var(--bs-primary);
+    background-color: rgb(from var(--bs-primary) r g b / 0%);
+    border-color: rgb(from var(--bs-primary) r g b / 0%);
+}
+
+.btn.ghost:hover {
+    color: var(--bs-primary);
+    background-color: rgb(from var(--bs-primary) r g b / 6%);
+    border-color: rgb(from var(--bs-primary) r g b / 0%);
+}
+
+/* menu di navigazione*/
+
+.navigazione-reale {
+    position: relative;
+}
+
+.navigazione-reale:before {
+    content: "";
+    width: 100%;
+    height: 36px;
+    background: var(--bs-primary);
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 0px 0px 40px 40px;
+}
+
+.ccam-nav {
+    padding: 12px;
+    border-radius: 100px;
+    box-shadow: 0px 0px 12px rgb(from var(--bs-secondary) r g b / 10%)
+}
+
+.ccam-nav .navbar-nav {
+    flex-grow: inherit;
+    justify-content: space-evenly;
+}
+
+.ccam-nav .container-fluid {
+    padding: 0;
+}
+
+.ccam-nav .nav-item {
+    padding: 0 !important;
+    border-radius: 300px;
+}
+
+.ccam-nav .nav-item:hover {
+    background-color: var(--bs-ccam-offwhite);
+}
+
+.ccam-nav .nav-link {
+    color: var(--bs-ccam-grey);
+    padding: 10px 20px !important;
+
+}
+
+.ccam-nav .nav-link:hover {
+    color: var(--bs-ccam-black);
+}
+
+.ccam-nav .nav-link.active {
+    color: var(--bs-white);
+}
+
+.ccam-nav .nav-item:has(.nav-link.active) {
+    background-color: var(--bs-primary);
+    color: var(--bs-white);
+    padding: 10px 24px;
+}
+
+.dropdown-menu[data-bs-popper] {
+    border-color: var(--bs-ccam-lines);
+    left: 10px;
+    border-radius: 12px;
+}
+
+.dropdown-item {
+
+    padding: 8px 12px;
+    border-bottom: 1px solid var(--bs-ccam-lines);
+}
+
+.dropend .dropdown-toggle::after {
+    vertical-align: 0;
+    position: absolute;
+    right: 14px;
+    top: 17px;
+}
+
+/* home and main UI elements */
+
+.header_home {
+    height: 360px;
+    /*background:linear-gradient(to top,  rgb(from var(--bs-secondary) r g b / 60%) , rgb(from var(--bs-secondary) r g b / 00%)) , url(../images/header_home.jpg);*/
+    background: linear-gradient(to top, rgb(from #0F3752 r g b / 60%), rgb(from #0F3752 r g b / 10%)), url(../images/header_home.jpg);
+    background-size: cover;
+}
+
+.dark-glass {
+    background: rgb(from var(--bs-ccam-black) r g b / 40%);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+}
+
+.card-widget {
+    position: relative;
+    overflow: hidden;
+}
+
+.card-widget-medium {
+    height: 230px;
+}
+
+.card-widget-large {
+    height: 300px;
+}
+
+.card-widget .text-content {
+    position: relative;
+    z-index: 2;
+}
+
+.card-widget::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: linear-gradient(to top, rgb(from var(--bs-ccam-black) r g b / 60%), rgb(from var(--bs-ccam-black) r g b / 0%) 40%);
+    left: 0;
+    bottom: 0;
+}
+
+
+
+.card-widget img {
+    position: absolute;
+    left: -1px;
+    top: -1px;
+    width: calc(100% + 2px);
+    height: calc(100% + 2px);
+    object-fit: cover;
+}
+
+.fake-rounder {
+    height: max-content;
+}
+
+.fake-rounder svg {
+    stroke-width: 2px;
+}
+
+a.card-widget,
+a.card-widget .dark-glass,
+a.card-widget .dark-glass svg,
+a.card-widget .dark-glass p.text-white,
+a.card-widget img {
+    transition: .4s all ease;
+}
+
+a.card-widget:hover {
+    background-size: 110% auto;
+}
+
+a.card-widget:hover .dark-glass {
+    background-color: var(--bs-white);
+}
+
+a.card-widget:hover .dark-glass svg,
+a.card-widget:hover .dark-glass .text-white {
+    color: var(--bs-ccam-black) !important;
+}
+
+a.card-widget:hover img {
+    transform: scale(1.06);
+}
+
+.light-white-image {
+    background: url('../images/line-shaded.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.linkoni {
+    background-color: var(--bs-ccam-offwhite);
+    padding: 8px 18px 8px 8px;
+    border-radius: 20px;
+    text-decoration: none;
+    position: relative;
+    transition: .3s all ease;
+}
+
+.blu-big-icon {
+    padding: 12px;
+    border-radius: 12px;
+    background-color: var(--bs-primary);
+}
+
+.blu-big-icon svg {
+    width: 30px;
+    height: 30px;
+    color: var(--bs-white);
+    stroke-width: 2px;
+}
+
+.arrow-linkone {
+    position: absolute;
+    right: 18px;
+    top: calc(50% - 12px);
+    transition: .3s all ease;
+}
+
+.arrow-linkone svg {
+    height: 24px;
+    width: 24px;
+    stroke-width: 2px;
+
+}
+
+.linkoni:hover .arrow-linkone {
+    right: 10px;
+}
+
+.linkoni:hover {
+    color: var(--bs-primary) !important;
+    background-color: var(--bs-white);
+}
+
+.col-avvisi-portlet {
+    overflow: hidden;
+
+}
+
+.avvisi-portlet-header .side svg {
+    color: var(--bs-primary);
+    width: 30px;
+    height: 30px;
+}
+
+.avvisi-lista {
+    height: -webkit-fill-available;
+    max-height: 255px;
+    overflow: auto;
+}
+
+.avviso-line svg {
+    color: var(--bs-primary);
+}
+
+.stroke-2 svg {
+    stroke-width: 2px;
+}
+
+.chev {
+    height: 24px;
+}
+
+.avviso {
+    transition: .3s all ease;
+    text-decoration: none;
+}
+
+.avviso:hover {
+    background-color: var(--bs-white);
+    padding-right: 4px !important;
+}
+
+.cruscotto {
+    background: url('../images/area_blu.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.liner {
+    height: 1px;
+    width: 100%;
+    border-bottom: 1px solid var(--bs-ccam-lines);
+}
+
+.news h4,
+.news .date_and_arrow,
+.news .date_and_arrow svg {
+    transition: .3s all ease;
+}
+
+.news .date_and_arrow svg {
+    opacity: 0;
+}
+
+.news:hover .date_and_arrow svg {
+    opacity: 1;
+}
+
+.news:hover h4 {
+    color: var(--bs-primary) !important;
+}
+
+.news:hover .date_and_arrow {
+    gap: 14px !important
+}
+
+.article_thumbnail {
+    overflow: hidden;
+}
+
+.article_thumbnail img {
+    object-fit: cover;
+    aspect-ratio: 16/9;
+    width: 100%;
+    transition: .4s all ease;
+}
+
+.news:hover .article_thumbnail img {
+    transform: scale(1.04);
+}
+
+footer ul li a {
+    transition: .3s all ease;
+}
+
+footer ul li:hover a {
+    transition: .3s all ease;
+    text-decoration: underline !important;
+}

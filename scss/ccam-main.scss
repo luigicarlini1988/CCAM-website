@@ -1,0 +1,19 @@
+//bootsrap default variables override
+@import '../scss/variable-overrides';
+
+//import functions
+@import '../node_modules/bootstrap/scss/functions';
+@import '../node_modules/bootstrap/scss/variables';
+
+//bootsrap variables expansions
+@import '../scss/variable-merge';
+
+//import bootstrap
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+
+//import fonts
+@import url('https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap');
+
+
+
+
