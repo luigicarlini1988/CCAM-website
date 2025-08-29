@@ -14,7 +14,7 @@
 <body class="bg-ccam-offwhite">
 
     <header>
-        <section class="pre-header py-16 px-32 bg-primary container-fully d-flex justify-content-between">
+        <section class="pre-header py-16 px-32 bg-primary container-fluid d-flex justify-content-between">
             <div class="d-flex align-items-center gap-20">
 
                 <a href="#" aria-label="home page"><img src="images/ccam_logo.svg" alt="ccam_logo" /></a>
@@ -51,7 +51,7 @@
         </section>
 
         <section class="navigazione-reale">
-            <div class="container-fluid container-ccam-2">
+            <div class="container-fluid container-ccam">
                 <nav class="row ccam-nav navbar navbar-expand-lg bg-white">
                     <div class="container-fluid">
                         <div class="logo-mobile d-block d-lg-none"><a href="#" aria-label="home page"><img src="images/ccam_logo.svg" alt="ccam_logo" /></a></div>
@@ -59,6 +59,17 @@
                             <span class="navbar-toggler-icon"></span>
                         </button>
                         <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                            <div class="d-block d-lg-none search_mobile">
+                                <div class="search-container input-group mt-20 mb-32">
+                                    <input type="text" aria-label="Carca nel sito" class="form-control search-input" placeholder="Cerca nel sito">
+                                    <div class="search-icon stroke-2 text-white">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search">
+                                            <circle cx="11" cy="11" r="8"></circle>
+                                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
                             <ul class="navbar-nav">
                                 <li class="nav-item">
                                     <a class="nav-link active" aria-current="page" href="#">Home</a>
@@ -118,9 +129,49 @@
                                     <a class="nav-link" href="#">Contatti</a>
                                 </li>
                             </ul>
+
+                            <div class="d-block d-lg-none numeri-veloci-mobile d-block d-lg-none">
+
+                                <div class="mt-40">
+                                    <p class="text-white title-20 m-0">Servizio Clienti</p>
+                                    <p class="text-white fw-light my-6">
+                                        Lunedì - Venerdi 8:00 - 20:00 <br>
+                                        Sabato 8:00 - 13:00 <br>
+                                        <span class="fw-bold"> 800.66.22.55</span>
+                                    </p>
+                                </div>
+                                <div class="mt-40">
+                                    <p class="text-white title-20 m-0">Pronto Intervento</p>
+                                    <p class="text-white fw-light my-6">
+                                        Attivo 24 ore su 24 <br>
+                                        7 giorni su 7 <br>
+                                        <span class="fw-bold"> 800 91 55 52</span>
+                                    </p>
+                                </div>
+
+
+                            </div>
+
+                            <div class="d-block d-lg-none ri-bottoni d-flex mt-40 gap-16">
+                                <a href="#" class="align-items-center justify-content-between d-flex flex-grow-1 btn btn-secondary var">
+                                    Tariffario
+                                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7.1501 7.15H14.8501M7.1501 11.55H14.8501M5.2801 2.75H16.7201C17.5099 2.75 18.1501 3.48873 18.1501 4.4V19.25L15.7668 17.6L13.3834 19.25L11.0001 17.6L8.61676 19.25L6.23343 17.6L3.8501 19.25V4.4C3.8501 3.48873 4.49033 2.75 5.2801 2.75Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </a>
+                                <a href="#" class="align-items-center justify-content-between d-flex flex-grow-1 btn btn-secondary var">
+                                    Area Utenti
+                                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M2.2002 18.8031C2.2002 15.3421 5.09162 12.5365 11.0002 12.5365C16.9088 12.5365 19.8002 15.3421 19.8002 18.8031C19.8002 19.3537 19.3985 19.8 18.9029 19.8H3.09745C2.60191 19.8 2.2002 19.3537 2.2002 18.8031Z" stroke="currentColor" stroke-width="1.5" />
+                                        <path d="M14.3002 5.50001C14.3002 7.32255 12.8227 8.80001 11.0002 8.80001C9.17765 8.80001 7.70019 7.32255 7.70019 5.50001C7.70019 3.67747 9.17765 2.20001 11.0002 2.20001C12.8227 2.20001 14.3002 3.67747 14.3002 5.50001Z" stroke="currentColor" stroke-width="1.5" />
+                                    </svg>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </nav>
+
+
             </div>
         </section>
 
@@ -130,7 +181,7 @@
     <main>
 
         <section id="home-hero" class="pt-28">
-            <div class="header_home d-flex container-fluid container-ccam-2 p-20 radius-40 bg-ccam-offwhite">
+            <div class="header_home d-flex container-fluid container-ccam p-20 radius-40 bg-ccam-offwhite">
                 <div class="dark-glass align-self-end flex-grow-1 text-white px-20 py-16 radius-20">
                     <div class="d-flex justify-content-between align-items-center">
                         <div class="d-flex gap-16 align-items-center">
@@ -139,17 +190,17 @@
                                 <p class="title-20-var m-0">Consorzio Comuni Acquedotto del Monferrato</p>
                             </div>
                         </div>
-                        <p class="title-14 m-0">99 comuni consorziati 1200 km2</p>
+                        <p class="hero-via title-14 m-0">99 comuni consorziati 1200 km2</p>
                     </div>
                 </div>
             </div>
         </section>
 
         <section id="aree_principali_sito" class="pt-28">
-            <div class="container-fluid container-ccam-2">
+            <div class="container-fluid container-ccam">
                 <div class="row gap-24">
 
-                    <div class="col p-0">
+                    <div class="col-md p-0">
                         <a href="#" aria-label="Bolletta Digitale" class="link-underline link-underline-opacity-0 col d-flex card-widget card-widget-medium radius-28 p-16">
                             <img src="images/thumbnail_faq.jpg" alt="" />
                             <div class="text-content align-self-end flex-grow-1 d-flex justify-content-between align-items-center">
@@ -166,7 +217,7 @@
                         </a>
                     </div>
 
-                    <div class="col p-0">
+                    <div class="col-md p-0">
                         <a href="#" aria-label="Area Utenti" class="link-underline link-underline-opacity-0 col d-flex card-widget card-widget-medium  radius-28 p-16">
                             <img src="images/thumbnail_areautente.jpg" alt="" />
                             <div class="text-content align-self-end flex-grow-1 d-flex justify-content-between align-items-center">
@@ -183,7 +234,7 @@
                         </a>
                     </div>
 
-                    <div class="col p-0">
+                    <div class="col-md p-0">
                         <a href="#" aria-label="Numeri Utili" class="link-underline link-underline-opacity-0 col d-flex card-widget card-widget-medium  radius-28 p-16">
                             <img src="images/thumbnail_contatti.jpg" alt="" />
                             <div class="text-content align-self-end flex-grow-1 d-flex justify-content-between align-items-center">
@@ -203,9 +254,9 @@
                 </div>
             </div>
 
-            <div class="container-fluid container-ccam-2 pt-28">
+            <div class="container-fluid container-ccam pt-28">
                 <div class="row gap-24">
-                    <div class="col p-0">
+                    <div class="col-md p-0">
                         <a href="#" aria-label="Gare d'appalto" class="link-underline link-underline-opacity-0 col d-flex card-widget card-widget-large radius-28 p-16">
                             <img src="images/thumbnail_gare.jpg" />
                             <div class="text-content align-self-end flex-grow-1 d-flex justify-content-between align-items-center">
@@ -222,7 +273,7 @@
                         </a>
                     </div>
 
-                    <div class="col p-0">
+                    <div class="col-md p-0">
                         <a href="#" aria-label="Amministrazione Trasparente" class="link-underline link-underline-opacity-0 col d-flex card-widget card-widget-large  radius-28 p-16">
                             <img src="images/thumbnail_lavori2.jpg" />
                             <div class="text-content align-self-end flex-grow-1 d-flex justify-content-between align-items-center">
@@ -245,9 +296,9 @@
 
         <section id="aree_secondarie" class="pt-72">
 
-            <div class="container-fluid container-ccam-2">
-                <div class="row light-white-image p-40 radius-40 d-flex gap-28">
-                    <div class="col p-0 d-flex flex-column gap-16">
+            <div class="container-fluid container-ccam">
+                <div class="row home-aree-tabella light-white-image p-16 p-lg-40 radius-40 d-flex gap-28">
+                    <div class="col-lg p-0 d-flex flex-column gap-12 gap-lg-16">
                         <a href="#" class="linkoni d-flex align-items-center gap-12 title-20 text-ccam-black">
                             <div class="blu-big-icon text-white">
                                 <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -315,23 +366,27 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col p-0 col-avvisi-portlet radius-20 bg-ccam-offwhite">
+                    <div class="col-lg p-0 col-avvisi-portlet radius-20 bg-ccam-offwhite">
                         <div class="avvisi-portlet d-flex flex-column">
                             <div class="avvisi-portlet-header bg-white d-flex align-items-center justify-content-between p-16">
                                 <div class="side d-flex align-items-center gap-12">
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M10.2 21.5999H7.79995C5.81173 21.5999 4.19995 19.9881 4.19995 17.9999V5.9999C4.19995 4.01168 5.81173 2.3999 7.79995 2.3999H16.2C18.1882 2.3999 19.8 4.01168 19.8 5.9999V8.9999M15.6 7.1999H7.79995M12 10.7999H7.79995M10.2 14.3999H7.79995M13.8 14.6999L15.19 14.0049C16.2035 13.4981 17.3964 13.4981 18.4099 14.0049L19.8 14.6999C19.8 14.6999 19.8 16.8899 19.8 18.0449C19.8 19.1999 18.7323 19.9796 16.8 21.1999C14.8676 19.9796 13.8 18.9499 13.8 18.0449V14.6999Z" />
-                                    </svg>
+                                    <div class="d-none d-md-block">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M10.2 21.5999H7.79995C5.81173 21.5999 4.19995 19.9881 4.19995 17.9999V5.9999C4.19995 4.01168 5.81173 2.3999 7.79995 2.3999H16.2C18.1882 2.3999 19.8 4.01168 19.8 5.9999V8.9999M15.6 7.1999H7.79995M12 10.7999H7.79995M10.2 14.3999H7.79995M13.8 14.6999L15.19 14.0049C16.2035 13.4981 17.3964 13.4981 18.4099 14.0049L19.8 14.6999C19.8 14.6999 19.8 16.8899 19.8 18.0449C19.8 19.1999 18.7323 19.9796 16.8 21.1999C14.8676 19.9796 13.8 18.9499 13.8 18.0449V14.6999Z" />
+                                        </svg>
+                                    </div>
                                     <h3 class="title-20 m-0 text-ccam-black">Preavvisi Lettura</h3>
                                 </div>
 
                                 <a href="#" class="btn btn-secondary align-items-center d-flex gap-2">Archivio
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-archive">
-                                        <polyline points="21 8 21 21 3 21 3 8"></polyline>
-                                        <rect x="1" y="3" width="22" height="5"></rect>
-                                        <line x1="10" y1="12" x2="14" y2="12"></line>
-                                    </svg>
+                                    <div class="d-none d-md-block">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-archive">
+                                            <polyline points="21 8 21 21 3 21 3 8"></polyline>
+                                            <rect x="1" y="3" width="22" height="5"></rect>
+                                            <line x1="10" y1="12" x2="14" y2="12"></line>
+                                        </svg>
+                                    </div>
                                 </a>
                             </div>
                             <div class="avvisi-lista px-12 py-1  d-flex flex-column gap-0">
@@ -477,17 +532,17 @@
         </section>
 
         <section id="cruscotto-dati" class="pt-72">
-            <div class="container-fluid container-ccam-2">
-                <div class="cruscotto row p-40 radius-40 d-flex gap-24">
-                    <div class="col bg-white p-20 radius-20">
+            <div class="container-fluid container-ccam">
+                <div class="cruscotto row p-16 p-lg-40 radius-40 d-flex gap-16 gap-lg-24">
+                    <div class="col-md bg-white p-20 radius-20">
                         <p class="title-36 text-ccam-black m-0">1200 <span class="text-primary">Km<sup>2</sup></span></p>
                         <p class="text-ccam-grey m-0">Area Coperta dal Consorzio</p>
                     </div>
-                    <div class="col bg-white p-20 radius-20">
+                    <div class="col-md bg-white p-20 radius-20">
                         <p class="title-36 text-ccam-black m-0">123 <span class="text-primary">Comuni</span></p>
                         <p class="text-ccam-grey m-0">Facenti Parte del Consorzio</p>
                     </div>
-                    <div class="col bg-white p-20 radius-20">
+                    <div class="col-md bg-white p-20 radius-20">
                         <p class="title-36 text-ccam-black m-0">27 <span class="text-primary">Km</span></p>
                         <p class="text-ccam-grey m-0">Di linee aggiunte nel 2025</p>
                     </div>
@@ -499,10 +554,10 @@
             <div class="container-fluid container-ccam">
                 <div class="row align-items-center gap-32">
                     <div class="col-auto p-0">
-                        <h2 class="title-36 text-ccam-black m-0">Focus <span class="text-primary">On</span></h2>
+                        <h2 class="titolo-divisorio title-36 text-ccam-black m-0">Focus <span class="text-primary">On</span></h2>
                     </div>
                     <div class="col p-0">
-                        <div class="row align-items-center gap-12">
+                        <div class="d-flex align-items-center gap-12">
                             <div class="col p-0 align-items-center">
                                 <span class="liner d-flex"></span>
                             </div>
@@ -521,7 +576,7 @@
 
             <div class="container-fluid container-ccam">
                 <div class="row gap-40 pt-32">
-                    <div class="col p-0">
+                    <div class="col-md p-0">
                         <a href="" class="link-underline link-underline-opacity-0">
                             <article class="news">
                                 <div class="date_and_arrow d-flex align-items-center gap-8 stroke-2">
@@ -540,7 +595,7 @@
                             </article>
                         </a>
                     </div>
-                    <div class="col p-0">
+                    <div class="col-md p-0">
                         <a href="" class="link-underline link-underline-opacity-0">
                             <article class="news">
                                 <div class="date_and_arrow d-flex align-items-center gap-8 stroke-2">
@@ -559,7 +614,7 @@
                             </article>
                         </a>
                     </div>
-                    <div class="col p-0">
+                    <div class="col-md p-0">
                         <a href="" class="link-underline link-underline-opacity-0">
                             <article class="news">
                                 <div class="date_and_arrow d-flex align-items-center gap-8 stroke-2">
@@ -587,10 +642,10 @@
             <div class="container-fluid container-ccam">
                 <div class="row align-items-center gap-32">
                     <div class="col-auto p-0">
-                        <h2 class="title-36 text-ccam-black m-0">Ultime <span class="text-primary">News</span></h2>
+                        <h2 class="titolo-divisorio title-36 text-ccam-black m-0">Ultime <span class="text-primary">News</span></h2>
                     </div>
                     <div class="col p-0">
-                        <div class="row align-items-center gap-12">
+                        <div class="d-flex align-items-center gap-12">
                             <div class="col p-0 align-items-center">
                                 <span class="liner d-flex"></span>
                             </div>
@@ -609,7 +664,7 @@
 
             <div class="container-fluid container-ccam">
                 <div class="row gap-40 pt-32">
-                    <div class="col p-0">
+                    <div class="col-md p-0">
                         <a href="" class="link-underline link-underline-opacity-0">
                             <article class="news">
                                 <div class="date_and_arrow d-flex align-items-center gap-8 stroke-2">
@@ -625,7 +680,7 @@
                             </article>
                         </a>
                     </div>
-                    <div class="col p-0">
+                    <div class="col-md p-0">
                         <a href="" class="link-underline link-underline-opacity-0">
                             <article class="news">
                                 <div class="date_and_arrow d-flex align-items-center gap-8 stroke-2">
@@ -641,7 +696,7 @@
                             </article>
                         </a>
                     </div>
-                    <div class="col p-0">
+                    <div class="col-md p-0">
                         <a href="" class="link-underline link-underline-opacity-0">
                             <article class="news">
                                 <div class="date_and_arrow d-flex align-items-center gap-8 stroke-2">
@@ -666,10 +721,10 @@
             <div class="container-fluid container-ccam">
                 <div class="row align-items-center gap-32">
                     <div class="col-auto p-0">
-                        <h2 class="title-36 text-ccam-black m-0">Editoriali <span class="text-primary">CCAM</span></h2>
+                        <h2 class="titolo-divisorio title-36 text-ccam-black m-0">Editoriali <span class="d-none d-md-block text-primary">CCAM</span></h2>
                     </div>
                     <div class="col p-0">
-                        <div class="row align-items-center gap-12">
+                        <div class="d-flex align-items-center gap-12">
                             <div class="col p-0 align-items-center">
                                 <span class="liner d-flex"></span>
                             </div>
@@ -688,7 +743,7 @@
 
             <div class="container-fluid container-ccam">
                 <div class="row gap-40 pt-32">
-                    <div class="col p-0">
+                    <div class="col-md p-0">
                         <a href="" class="link-underline link-underline-opacity-0">
                             <article class="news">
                                 <div class="article_thumbnail radius-32 mb-16">
@@ -740,17 +795,17 @@
     </main>
 
     <footer class="pt-72 pb-32">
-        <div class="bg-primary container-fluid container-ccam p-40 radius-32 mb-20">
+        <div class="bg-primary container-fluid container-ccam p-20 p-lg-40 radius-32 mb-20">
             <div class="row gap-40">
-                <div class="col m-0">
+                <div class="col-lg m-0">
                     <a href="#" aria-label="home page"><img src="images/ccam_logo.svg" alt="ccam_logo" /></a>
                     <p class="text-white fw-light my-12">
                         Via Senatore Ferraris, 3 - 14036 Moncalvo (AT) <br>
                         Codice Fiscale 82001730066 - Partita IVA 01202730055 <br>
                         Registro Imprese Asti 6041/1998 - REA 96301
                     </p>
-                    <div class="row mt-40">
-                        <div class="col m-0">
+                    <div class="row gap-20 gap-lg-0 mt-40">
+                        <div class="col-md m-0">
                             <p class="text-white title-20 m-0">Servizio Clienti</p>
                             <p class="text-white fw-light my-6">
                                 Lunedì - Venerdi 8:00 - 20:00 <br>
@@ -758,17 +813,17 @@
                                 <span class="fw-bold"> 800.66.22.55</span>
                             </p>
                         </div>
-                        <div class="col m-0">
-                            <p class="text-white title-20 m-0">Servizio Clienti</p>
+                        <div class="col-md m-0">
+                            <p class="text-white title-20 m-0">Pronto Intervento</p>
                             <p class="text-white fw-light my-6">
-                                Lunedì - Venerdi 8:00 - 20:00 <br>
-                                Sabato 8:00 - 13:00 <br>
-                                <span class="fw-bold"> 800.66.22.55</span>
+                                Attivo 24 ore su 24 <br>
+                                7 giorni su 7 <br>
+                                <span class="fw-bold"> 800 91 55 52</span>
                             </p>
                         </div>
                     </div>
                 </div>
-                <div class="col-5 m-0 d-flex flex-column">
+                <div class="col-lg-5 gap-28 gap-lg-0 m-0 d-flex flex-column">
                     <nav class="mb-auto">
                         <ul class="nav row row-cols-2">
                             <li class="nav-item col py-1">
@@ -797,8 +852,8 @@
                             </li>
                     </nav>
 
-                    <div class="row">
-                        <div class="col">
+                    <div class="row gap-16 gap-md-0">
+                        <div class="col-md">
                             <a class="flex-grow-1 btn btn-secondary trasp d-flex align-items-center justify-content-between">Contatti
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail">
                                     <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
@@ -806,7 +861,7 @@
                                 </svg>
                             </a>
                         </div>
-                        <div class="col">
+                        <div class="col-md">
                             <a class="flex-grow-1 btn btn-secondary trasp d-flex align-items-center justify-content-between">Conversione PDF
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file">
                                     <path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path>
@@ -822,7 +877,7 @@
             <div class="d-flex justify-content-between align-items-center">
                 <p class="body-14 text-ccam-grey-light m-0">Copyright © 2025 Consorzio Comuni Acquedotto Monferrato. Tutti i diritti riservati.</p>
                 <nav>
-                    <ul class="nav gap-20">
+                    <ul class="nav nav gap-2 gap-sm-20">
                         <li class="nav-item">
                             <a class="text-white link-underline link-underline-opacity-0 title-14" href="">Cookie</a>
                         </li>
