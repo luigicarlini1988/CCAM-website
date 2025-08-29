@@ -482,3 +482,62 @@ footer ul li:hover a {
     transition: .3s all ease;
     text-decoration: underline !important;
 }
+
+
+
+
+
+
+@media (max-width: 1220px) { 
+
+    .bottoni-pre-header .btn:nth-child(1),
+    .bottoni-pre-header .btn:nth-child(2) {
+        display:none!important;
+    }
+}
+
+
+
+@media (max-width: 991.98px) { 
+
+    .pre-header,
+    .navigazione-reale:before {
+        display:none!important;
+    }
+
+    .ccam-nav {
+        border-radius:0;
+        box-shadow:none;
+        background:var(--bs-primary)!important;
+        color:var(--bs-white)!important;
+    }
+
+    .logo-mobile img {
+        width:100px;
+    }
+
+    .navbar-toggler {
+        padding: 6px;
+        border: none;
+    }
+
+    .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    }
+
+    .navbar-toggler:focus {
+        box-shadow: 0 0 0 1.5px;
+
+    }
+
+    .ccam-nav .nav-link {
+        color:var(--bs-white);
+        font-weight: 300 !important;
+        padding: 10px 10px !important
+    }
+
+    .ccam-nav .nav-item {
+        border-radius:0;
+    }
+    
+ }
