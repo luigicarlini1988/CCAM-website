@@ -251,8 +251,7 @@
 
 .header_home {
     height: 360px;
-    /*background:linear-gradient(to top,  rgb(from var(--bs-secondary) r g b / 60%) , rgb(from var(--bs-secondary) r g b / 00%)) , url(../images/header_home.jpg);*/
-    background: linear-gradient(to top, rgb(from #0F3752 r g b / 60%), rgb(from #0F3752 r g b / 10%)), url(../images/header_home.jpg);
+    background: linear-gradient(to top, rgb(from var(--bs-secondary) r g b / 60%), rgb(from var(--bs-secondary) r g b / 10%)), url(../images/header_home.jpg);
     background-size: cover;
 }
 
