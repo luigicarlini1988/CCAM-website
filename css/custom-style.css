@@ -516,6 +516,37 @@ footer ul li:hover a {
 }
 
 
+/* banner alerts*/
+
+#editoriale-banner .desktop {
+    min-height:350px;
+}
+
+#editoriale-banner .desktop img {
+    position:absolute;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    object-fit: cover;
+    transition: .4s all ease;
+}
+
+#editoriale-banner .desktop:hover img {
+    transform:scale(1.02);
+}
+
+#editoriale-banner .desktop .fake-button {
+    width:fit-content;
+    transition: .3s all ease; 
+}
+
+#editoriale-banner .desktop:hover .fake-button {
+    color:var(--bs-ccam-black)!important;
+    background:var(--bs-white)!important;
+}
+
+
 
 @media (max-width: 1220px) { 
 
@@ -732,7 +763,7 @@ footer ul li:hover a {
 
     .header_home {
         height:auto;
-        aspect-ratio: 16/12!important;
+        aspect-ratio: 16/10!important;
     }
 
   .card-widget {
@@ -758,7 +789,10 @@ footer ul li:hover a {
         line-height: 2rem;
     }
 
-    /* commento */
+    #alert-disservizio .title-20 {
+        font-size: 1rem;
+        line-height: 1.375rem;
+    }
 
 }
 

@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Banners Alert</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link href="css/ccam-main.min.css" rel="stylesheet">
+    <link href="css/custom-style.css" rel="stylesheet">
+</head>
+
+<body class="bg-ccam-offwhite">
+    <header>
+        <div class="pre-header py-16 px-32 bg-primary container-fluid d-flex justify-content-between">
+            <div class="d-flex align-items-center gap-20">
+
+                <a href="#" aria-label="vai alla home page"><img src="images/ccam_logo.svg" alt="ccam_logo"></a>
+                <div class="d-flex text-white">
+                    <p class="body-14 m-0">Servizio Clienti - lun/ven 8/20 - sab 8/13 <strong><a aria-label="Chiama Servizio Clienti" class="text-white link-underline link-underline-opacity-0" href="tel:800662255">800 66 22 55</a></strong></p>
+                </div>
+                <div class="d-flex text-white">
+                    <p class="body-14 m-0">Pronto Intervento 24/7 <strong><a aria-label="Chiama Pronto Intervento" class="text-white link-underline link-underline-opacity-0" href="tel:800915552">800 91 55 525</a></strong></p>
+                </div>
+            </div>
+
+            <div class="bottoni-pre-header d-flex gap-12">
+                <a href="#" class="align-items-center d-flex gap-2 btn btn-secondary var">
+                    Tariffario
+                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.1501 7.15H14.8501M7.1501 11.55H14.8501M5.2801 2.75H16.7201C17.5099 2.75 18.1501 3.48873 18.1501 4.4V19.25L15.7668 17.6L13.3834 19.25L11.0001 17.6L8.61676 19.25L6.23343 17.6L3.8501 19.25V4.4C3.8501 3.48873 4.49033 2.75 5.2801 2.75Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </a>
+                <a href="#" class="align-items-center d-flex gap-2 btn btn-secondary var">
+                    Area Utenti
+                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.2002 18.8031C2.2002 15.3421 5.09162 12.5365 11.0002 12.5365C16.9088 12.5365 19.8002 15.3421 19.8002 18.8031C19.8002 19.3537 19.3985 19.8 18.9029 19.8H3.09745C2.60191 19.8 2.2002 19.3537 2.2002 18.8031Z" stroke="currentColor" stroke-width="1.5" />
+                        <path d="M14.3002 5.50001C14.3002 7.32255 12.8227 8.80001 11.0002 8.80001C9.17765 8.80001 7.70019 7.32255 7.70019 5.50001C7.70019 3.67747 9.17765 2.20001 11.0002 2.20001C12.8227 2.20001 14.3002 3.67747 14.3002 5.50001Z" stroke="currentColor" stroke-width="1.5" />
+                    </svg>
+                </a>
+                <button aria-label="cerca nel sito" id="open_mega_search" class="align-items-center d-flex gap-2 btn btn-secondary icon-only var">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                </button>
+
+            </div>
+        </div>
+
+        <div class="navigazione-reale">
+            <div class="container-fluid container-ccam">
+                <nav class="row ccam-nav navbar navbar-expand-lg bg-white">
+                    <div class="container-fluid">
+                        <div class="logo-mobile d-block d-lg-none"><a href="#" aria-label="vai alla home page"><img src="images/ccam_logo.svg" alt="ccam_logo"></a></div>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                            <div class="d-block d-lg-none search_mobile">
+                                <div class="search-container input-group mt-20 mb-32">
+                                    <input type="text" aria-label="Carca nel sito" class="form-control search-input" placeholder="Cerca nel sito">
+                                    <div class="search-icon stroke-2 text-white">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search">
+                                            <circle cx="11" cy="11" r="8"></circle>
+                                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                </li>
+
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" data-bs-auto-close="outside" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Area istituzionale
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Voce di menu</a></li>
+                                        <li><a class="dropdown-item" href="#">Voce di menu</a></li>
+                                        <li><a class="dropdown-item" href="#">Voce di menu</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" data-bs-auto-close="outside" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Amministrazione Trasparente
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Voce di menu</a></li>
+                                        <li><a class="dropdown-item" href="#">Voce di menu</a></li>
+                                        <li><a class="dropdown-item" href="#">Calendario Letture Contatori</a></li>
+                                        <li class="dropend">
+                                            <a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" href="#">Something else here</a>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a class="dropdown-item" href="#">Voce di menu</a></li>
+                                        <li><a class="dropdown-item" href="#">Voce di menu</a></li>
+                                        <li><a class="dropdown-item" href="#">Voce di menu</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" data-bs-auto-close="outside" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Area Utenti
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Voce di menu</a></li>
+                                        <li><a class="dropdown-item" href="#">Voce di menu</a></li>
+                                        <li><a class="dropdown-item" href="#">Voce di menu</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Gare</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Aggiornamenti</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Contatti</a>
+                                </li>
+                            </ul>
+
+                            <div class="d-block d-lg-none numeri-veloci-mobile d-block d-lg-none">
+
+                                <div class="mt-40">
+                                    <p class="text-white title-20 m-0">Servizio Clienti</p>
+                                    <p class="text-white fw-light my-6">
+                                        Lunedi - Venerdi 9:00 - 20:00<br>
+                                        Sabato 8:00 - 13:00<br>
+                                        <span class="fw-bold">800.66.22.55</span>
+                                    </p>
+                                </div>
+                                <div class="mt-40">
+                                    <p class="text-white title-20 m-0">Pronto Intervento</p>
+                                    <p class="text-white fw-light my-6">
+                                        Attivo 24 ore su 24 <br>
+                                        7 giorni su 7 <br>
+                                        <span class="fw-bold"> 800 91 55 52</span>
+                                    </p>
+                                </div>
+
+
+                            </div>
+
+                            <div class="d-block d-lg-none ri-bottoni d-flex mt-40 gap-16">
+                                <a href="#" class="align-items-center justify-content-between d-flex flex-grow-1 btn btn-secondary var">
+                                    Tariffario
+                                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7.1501 7.15H14.8501M7.1501 11.55H14.8501M5.2801 2.75H16.7201C17.5099 2.75 18.1501 3.48873 18.1501 4.4V19.25L15.7668 17.6L13.3834 19.25L11.0001 17.6L8.61676 19.25L6.23343 17.6L3.8501 19.25V4.4C3.8501 3.48873 4.49033 2.75 5.2801 2.75Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </a>
+                                <a href="#" class="align-items-center justify-content-between d-flex flex-grow-1 btn btn-secondary var">
+                                    Area Utenti
+                                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M2.2002 18.8031C2.2002 15.3421 5.09162 12.5365 11.0002 12.5365C16.9088 12.5365 19.8002 15.3421 19.8002 18.8031C19.8002 19.3537 19.3985 19.8 18.9029 19.8H3.09745C2.60191 19.8 2.2002 19.3537 2.2002 18.8031Z" stroke="currentColor" stroke-width="1.5" />
+                                        <path d="M14.3002 5.50001C14.3002 7.32255 12.8227 8.80001 11.0002 8.80001C9.17765 8.80001 7.70019 7.32255 7.70019 5.50001C7.70019 3.67747 9.17765 2.20001 11.0002 2.20001C12.8227 2.20001 14.3002 3.67747 14.3002 5.50001Z" stroke="currentColor" stroke-width="1.5" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+
+
+            </div>
+        </div>
+
+
+    </header>
+    <main>
+        <section id="home-hero" class="pt-28">
+            <div class="header_home d-flex container-fluid container-ccam p-20 radius-40 bg-ccam-offwhite">
+                <div class="dark-glass align-self-end flex-grow-1 text-white px-20 py-16 radius-20">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="d-flex gap-16 align-items-center">
+                            <h1 class="title-32 m-0">CCAM</h1>
+                            <div class="ps-12 border-start border-white">
+                                <p class="title-20-var m-0">Consorzio Comuni Acquedotto del Monferrato</p>
+                            </div>
+                        </div>
+                        <p class="hero-via title-14 m-0">99 comuni consorziati 1200 km2</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="alert-disservizio" class="pt-28">
+            <div class="container-fluid container-ccam radius-28 bg-white">
+                <div class="row gap-12 p-12 p-md-16">
+                    <div class="col-md p-0">
+                        <div class="bg-danger text-white p-12 radius-18 stroke-2 d-flex gap-6 align-items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-alert-triangle">
+                                <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path>
+                                <line x1="12" y1="9" x2="12" y2="13"></line>
+                                <line x1="12" y1="17" x2="12.01" y2="17"></line>
+                            </svg>
+                            <h2 class="title-20 m-0">Interruzione Servizio Idrico</h2>
+                        </div>
+                    </div>
+                    <div class="col-md p-0 d-flex align-items-center gap-12">
+                        <div class="bg-ccam-offwhite text-ccam-black p-12 radius-18 stroke-2 d-flex flex-grow-1 align-items-center gap-6">
+                            <span class="text-danger">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                    <circle cx="12" cy="10" r="3"></circle>
+                                </svg>
+                            </span>
+                            <p class="title-20 m-0">Belforte Monferrato</p>
+                            <p class="title-14 text-danger m-0">Zona3</p>
+                        </div>
+                        <a href="" aria-label="Piú informazioni sul disservizio" class="btn btn-danger icon-only d-flex align-items-center justify-content-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="row gap-12 p-12 p-md-16 pt-0 pt-md-0">
+                    <div class="col-md p-0">
+                        <div class="bg-ccam-offwhite text-ccam-black p-12 radius-18 stroke-2 d-flex flex-grow-1 align-items-center gap-6">
+                            <span class="text-danger">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <polyline points="12 6 12 12 16 14"></polyline>
+                                </svg>
+                            </span>
+                            <p class="title-20 m-0">Inizio</p>
+                            <p class="title-14 text-danger m-0">08:00</p>
+                            <p class="body-14 text-ccam-black m-0">Gio 12 Agosto 2025</p>
+                        </div>
+                    </div>
+                    <div class="col-md p-0">
+                        <div class="bg-ccam-offwhite text-ccam-black p-12 radius-18 stroke-2 d-flex flex-grow-1 align-items-center gap-6">
+                            <span class="text-danger">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <polyline points="12 6 12 12 16 14"></polyline>
+                                </svg>
+                            </span>
+                            <p class="title-20 m-0">Fine</p>
+                            <p class="title-14 text-danger m-0">17:00</p>
+                            <p class="body-14 text-ccam-black m-0">Gio 12 Agosto 2025</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="editoriale-banner" class="pt-28">
+
+            <!-- this one mobile, fino a 768px md bootstrap breakpoint -->
+            <div class="d-block d-md-none">
+                <div class="mobile container-fluid container-ccam">
+                    <a href="" class="link-underline link-underline-opacity-0">
+                        <article class="news">
+                            <div class="article_thumbnail radius-32 mb-16">
+                                <img src="images/thumbnail_monnalisa.jpg" alt="thumbnail articolo">
+                            </div>
+
+                            <div class="article-title my-6">
+                                <h3 class="title-26 text-ccam-black">Le Tue Bollette, Sempre con te. Passa al formato digitale con un click</h3>
+                            </div>
+                            <div class="date_and_arrow d-flex align-items-center gap-8 stroke-2">
+                                <p class="title-16 text-primary m-0">Attiva la Bolletta Digitale</p>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right">
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    <polyline points="12 5 19 12 12 19"></polyline>
+                                </svg>
+                            </div>
+                        </article>
+                    </a>
+                </div>
+            </div>
+
+            <!-- poi this one for desktop-->
+            <div class="d-none d-md-block">
+                <a href="" class="link-underline link-underline-opacity-0">
+                    <div class="desktop overflow-hidden d-flex container-fluid container-ccam radius-28 bg-ccam-black p-48 position-relative">
+                        <img src="images/monna_large.jpg" alt="Immagine Editoriale">
+                        <div class="col-8 d-flex flex-column position-relative">
+                            <div class="mb-auto">
+                                <h3 class="text-white title-42 m-0">Le Tue Bollette, Sempre con te. Passa al formato digitale con un click</h3>
+                            </div>
+                            <div class="fake-button text-white title-20 py-12 px-20 dark-glass radius-999 m-0">Attiva la Bolletta Digitale</div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+
+        </section>
+    </main>
+</body>
+
+</html>
