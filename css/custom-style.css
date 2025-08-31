@@ -57,6 +57,11 @@
     border-radius: var(--radius-999);
 }
 
+.btn-secondary.var:focus-visible,
+.btn-secondary.trasp:focus-visible {
+    box-shadow:0px 0px 0px 2px var(--bs-white); 
+}
+
 .title-42 {
     font-size: 2.625rem;
     line-height: 3rem;
