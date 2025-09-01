@@ -724,6 +724,12 @@ footer ul li:hover a {
     border-bottom-left-radius: 1.5rem;
 }
 
+.lettura_card:hover .btn.btn-secondary {
+    color:var(--bs-white)!important;
+    background:var(--bs-primary)!important;
+    border-color:var(--bs-primary)!important;
+}
+
 @media (max-width: 1220px) { 
 
     .bottoni-pre-header .btn:nth-child(1),
@@ -993,6 +999,10 @@ footer ul li:hover a {
         width:36px;
         height:36px;
         stroke-width: 2px;
+    }
+
+    .header_interne {
+        border-radius: 28px;
     }
 
 }
