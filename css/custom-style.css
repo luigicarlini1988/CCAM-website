@@ -989,6 +989,7 @@ footer ul li:hover a {
         gap: 12px;
         padding:16px!important;
         align-items: flex-start!important;
+        border-radius:24px;
     }
 
     .accedi_mega_button .btn {
