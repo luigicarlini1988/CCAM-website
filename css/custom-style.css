@@ -14,6 +14,17 @@
     --radius-999: 999rem;
 }
 
+section h1 {
+    font-size: 2rem;
+    line-height: 2.25rem;
+    font-weight: 600;
+}
+
+:where(h1) {
+  margin-block: 0.67em;
+  font-size: 2em;
+}
+
 
 .radius-40 {
     border-radius: var(--radius-40);
