@@ -623,8 +623,14 @@ footer ul li:hover a {
     color:rgb(from var(--bs-white) r g b / 40%)
 }
 
-.listona_links li.nav-item a {
+.listona_links li.nav-item a,
+.sommario_links li.nav-item a {
     transition: .3s all ease;
+}
+
+.sommario_links li.nav-item a svg {
+    width:20px;
+    height:20px;
 }
 
 .listona_links li.nav-item a svg {
@@ -632,7 +638,8 @@ footer ul li:hover a {
     transition: .3s all ease;
 }
 
-.listona_links li.nav-item a:hover {
+.listona_links li.nav-item a:hover,
+.sommario_links li.nav-item a:hover {
     color:var(--bs-primary)!important;
 }
 
@@ -648,6 +655,73 @@ footer ul li:hover a {
 .accedi_mega_button .stroke-3 svg {
     width:54px;
     height:54px;
+}
+
+.risorsa {
+    min-height: 200px;
+}
+
+.risorsa img {
+    top:0;
+    left:0;
+    position:absolute;
+    height:100%;
+    width:100%;
+    object-fit: cover;
+}
+
+.file_size_type img,
+.file_size_type svg {
+    height:18px;
+    width:18px;
+    stroke:1;
+}
+
+.file_size_type svg path {
+    stroke:1;
+}
+
+.risorsa img,
+.risorsa .btn {
+ transition: .3s all ease;
+}
+
+.risorsa:hover img {
+    transform:scale(1.06);
+}
+
+.risorsa:hover .btn.btn-secondary {
+    color:var(--bs-secondary)!important;
+    background-color:var(--bs-white)!important;
+    border-color:var(--bs-white)!important;
+}
+
+.table tbody tr td,
+.table tbody tr th {
+    color:var(--bs-ccam-grey)!important;
+}
+.table thead.table-dark tr th {
+    color:var(--bs-white)!important;
+}
+
+.accordion-item:first-of-type>.accordion-header .accordion-button {
+    border-top-left-radius: 1.4rem;
+    border-top-right-radius: 1.4rem;
+}
+
+.accordion-item:first-of-type {
+    border-top-left-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
+}
+
+.accordion-item:last-of-type>.accordion-header .accordion-button.collapsed{
+    border-bottom-right-radius: 1.4rem;
+    border-bottom-left-radius: 1.4rem;
+}
+
+.accordion-item:last-of-type {
+    border-bottom-right-radius: 1.5rem;
+    border-bottom-left-radius: 1.5rem;
 }
 
 @media (max-width: 1220px) { 
@@ -892,6 +966,33 @@ footer ul li:hover a {
     #alert-disservizio .title-20 {
         font-size: 1rem;
         line-height: 1.375rem;
+    }
+
+    .header_interne h1.title-32 {
+        font-size: 1.625rem;
+        line-height: 2rem;
+    }
+
+    .text-page-area .title-32 {
+        font-size: 1.625rem;
+        line-height: 2rem;
+    }
+
+    .accedi_mega_button {
+        flex-direction: column;
+        gap: 12px;
+        padding:16px!important;
+        align-items: flex-start!important;
+    }
+
+    .accedi_mega_button .btn {
+        width:100%;
+        justify-content: space-between;
+    }
+    .accedi_mega_button .stroke-3 svg {
+        width:36px;
+        height:36px;
+        stroke-width: 2px;
     }
 
 }
