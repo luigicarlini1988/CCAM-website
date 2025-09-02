@@ -1027,6 +1027,11 @@ footer ul li:hover a {
         border-radius: 28px;
     }
 
+    .dettaglio_lettura {
+        border-radius:0px;
+        background:none!important;
+    }
+
 }
 
 
