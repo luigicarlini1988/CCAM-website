@@ -20,6 +20,8 @@ section h1,
     font-size: 2rem;
     line-height: 2.25rem;
     font-weight: 600;
+    margin-block:0;
+    color:var(--bs-white);
 }
 
 
@@ -987,6 +989,16 @@ footer ul li:hover a {
         font-size: 1.625rem;
         line-height: 2rem;
     }
+
+    h1,
+    section h1,
+    :where(h1) {
+        font-size: 1.625rem!important;
+        line-height: 2rem;
+        font-weight: 600;
+        margin-block:0;
+    }
+
 
     .text-page-area .title-32 {
         font-size: 1.625rem;
