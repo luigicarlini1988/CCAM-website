@@ -741,6 +741,15 @@ footer ul li:hover a {
     border-color:var(--bs-primary)!important;
 }
 
+section.comuni img {
+    aspect-ratio:16/10;
+    object-fit: cover;
+    border-radius:24px;
+    width:100%;
+}
+
+
+
 @media (max-width: 1220px) { 
 
     .bottoni-pre-header .btn:nth-child(1),
@@ -945,6 +954,10 @@ footer ul li:hover a {
 
     .avvisi-lista {
         max-height:none;
+    }
+
+    .consorzio-oggi .light-white-image  {
+        background:none!important;
     }
 }
 
