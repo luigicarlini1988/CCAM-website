@@ -593,6 +593,11 @@ footer ul li:hover a {
     height:360px;
 }
 
+.article_details .header_interne {
+    height:auto;
+    aspect-ratio: 16 / 9;
+}
+
 .header_interne::after{
     content: "";
     position: absolute;
@@ -632,6 +637,14 @@ footer ul li:hover a {
 
 .breadcrumb-item+.breadcrumb-item::before {
     color:rgb(from var(--bs-white) r g b / 40%)
+}
+
+.in_article .breadcrumb-item+.breadcrumb-item::before {
+    color:rgb(from var(--bs-ccam-lines) r g b / 100%)
+}
+
+.in_article.bread_crumbs .breadcrumb-item.active {
+    color:var(--bs-ccam-grey);
 }
 
 .listona_links li.nav-item a,
