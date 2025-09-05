@@ -13,39 +13,40 @@
 
 <body class="bg-ccam-offwhite">
     <header>
-        <div class="pre-header py-16 px-32 bg-primary container-fluid d-flex justify-content-between">
-            <div class="d-flex align-items-center gap-20">
+        <div class="pre-header py-16 px-32 bg-primary">
+            <div class="pre-maxi d-flex justify-content-between d-flex justify-content-between">
+                <div class="d-flex align-items-center gap-20">
 
-                <a href="#" aria-label="vai alla home page"><img src="images/ccam_logo.svg" alt="ccam_logo" /></a>
-                <div class="d-flex text-white">
-                    <p class="body-14 m-0">Servizio Clienti - lun/ven 8/20 - sab 8/13 <strong><a aria-label="Chiama Servizio Clienti" class="text-white link-underline link-underline-opacity-0" href="tel:800662255">800 66 22 55</a></strong></p>
+                    <a href="#" aria-label="vai alla home page"><img src="images/ccam_logo.svg" alt="ccam_logo" /></a>
+                    <div class="d-flex text-white">
+                        <p class="body-14 m-0">Servizio Clienti - lun/ven 8/20 - sab 8/13 <strong><a aria-label="Chiama Servizio Clienti" class="text-white link-underline link-underline-opacity-0" href="tel:800662255">800 66 22 55</a></strong></p>
+                    </div>
+                    <div class="d-flex text-white">
+                        <p class="body-14 m-0">Pronto Intervento 24/7 <strong><a aria-label="Chiama Pronto Intervento" class="text-white link-underline link-underline-opacity-0" href="tel:800915552">800 91 55 525</a></strong></p>
+                    </div>
                 </div>
-                <div class="d-flex text-white">
-                    <p class="body-14 m-0">Pronto Intervento 24/7 <strong><a aria-label="Chiama Pronto Intervento" class="text-white link-underline link-underline-opacity-0" href="tel:800915552">800 91 55 525</a></strong></p>
+
+                <div class="bottoni-pre-header d-flex gap-12">
+                    <a href="#" class="align-items-center d-flex gap-2 btn btn-secondary var">
+                        Tariffario
+                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7.1501 7.15H14.8501M7.1501 11.55H14.8501M5.2801 2.75H16.7201C17.5099 2.75 18.1501 3.48873 18.1501 4.4V19.25L15.7668 17.6L13.3834 19.25L11.0001 17.6L8.61676 19.25L6.23343 17.6L3.8501 19.25V4.4C3.8501 3.48873 4.49033 2.75 5.2801 2.75Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </a>
+                    <a href="#" class="align-items-center d-flex gap-2 btn btn-secondary var">
+                        Area Utenti
+                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2.2002 18.8031C2.2002 15.3421 5.09162 12.5365 11.0002 12.5365C16.9088 12.5365 19.8002 15.3421 19.8002 18.8031C19.8002 19.3537 19.3985 19.8 18.9029 19.8H3.09745C2.60191 19.8 2.2002 19.3537 2.2002 18.8031Z" stroke="currentColor" stroke-width="1.5" />
+                            <path d="M14.3002 5.50001C14.3002 7.32255 12.8227 8.80001 11.0002 8.80001C9.17765 8.80001 7.70019 7.32255 7.70019 5.50001C7.70019 3.67747 9.17765 2.20001 11.0002 2.20001C12.8227 2.20001 14.3002 3.67747 14.3002 5.50001Z" stroke="currentColor" stroke-width="1.5" />
+                        </svg>
+                    </a>
+                    <button aria-label="cerca nel sito" id="open_mega_search" class="align-items-center d-flex gap-2 btn btn-secondary icon-only var">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                        </svg>
+                    </button>
                 </div>
-            </div>
-
-            <div class="bottoni-pre-header d-flex gap-12">
-                <a href="#" class="align-items-center d-flex gap-2 btn btn-secondary var">
-                    Tariffario
-                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M7.1501 7.15H14.8501M7.1501 11.55H14.8501M5.2801 2.75H16.7201C17.5099 2.75 18.1501 3.48873 18.1501 4.4V19.25L15.7668 17.6L13.3834 19.25L11.0001 17.6L8.61676 19.25L6.23343 17.6L3.8501 19.25V4.4C3.8501 3.48873 4.49033 2.75 5.2801 2.75Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
-                </a>
-                <a href="#" class="align-items-center d-flex gap-2 btn btn-secondary var">
-                    Area Utenti
-                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M2.2002 18.8031C2.2002 15.3421 5.09162 12.5365 11.0002 12.5365C16.9088 12.5365 19.8002 15.3421 19.8002 18.8031C19.8002 19.3537 19.3985 19.8 18.9029 19.8H3.09745C2.60191 19.8 2.2002 19.3537 2.2002 18.8031Z" stroke="currentColor" stroke-width="1.5" />
-                        <path d="M14.3002 5.50001C14.3002 7.32255 12.8227 8.80001 11.0002 8.80001C9.17765 8.80001 7.70019 7.32255 7.70019 5.50001C7.70019 3.67747 9.17765 2.20001 11.0002 2.20001C12.8227 2.20001 14.3002 3.67747 14.3002 5.50001Z" stroke="currentColor" stroke-width="1.5" />
-                    </svg>
-                </a>
-                <button aria-label="cerca nel sito" id="open_mega_search" class="align-items-center d-flex gap-2 btn btn-secondary icon-only var">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search">
-                        <circle cx="11" cy="11" r="8"></circle>
-                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-                    </svg>
-                </button>
-
             </div>
         </div>
 

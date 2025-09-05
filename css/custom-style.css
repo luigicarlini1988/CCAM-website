@@ -202,6 +202,11 @@ section h1,
 
 /* menu di navigazione*/
 
+.pre-maxi {
+    max-width:1280px;
+    margin:auto;
+}
+
 .navigazione-reale {
     position: relative;
 }
@@ -832,17 +837,24 @@ button#close-mega-search:hover {
 }
 
 @media (max-width: 1100px) { 
-    header .container-ccam {
-        max-width:100%;
-    }
+
     .container-ccam {
         max-width:calc(100% - 40px);
     }
+
+    .ccam-nav .nav-link {
+        padding: 10px 10px!important;
+    }
+
 }
 
 
 
 @media (max-width: 991.98px) { 
+    header .container-ccam {
+        max-width:100%;
+    }
+
 
     .ccam-mega-search.modal,
     .modal-backdrop.show {
