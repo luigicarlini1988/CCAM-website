@@ -776,6 +776,27 @@ section.comuni img {
     border:1px solid var(--bs-ccam-lines);
 }
 
+.search-results img {
+    width:100%;
+    aspect-ratio: 16 / 12;
+    object-fit: cover;
+    border-radius:16px;
+
+}
+
+.search-results a h2,
+.search-results a img {
+    transition: .3s all ease;
+}
+
+.search-results a h2:hover {
+    color:var(--primary)!important;
+}
+
+.search-results a img:hover{
+    transform:scale(1.06);
+}
+
 @media (max-width: 1220px) { 
 
     .bottoni-pre-header .btn:nth-child(1),
@@ -1069,6 +1090,12 @@ section.comuni img {
     .dettaglio_lettura {
         border-radius:0px;
         background:none!important;
+    }
+
+    .search-results img {
+
+        aspect-ratio: 16 / 9;
+
     }
 
 }
