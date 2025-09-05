@@ -549,7 +549,15 @@ footer ul li:hover a {
 .form-control:focus {
     background-color: rgb(from var(--bs-secondary) r g b / 10%);
     color:var(--bs-white);
+    
 }
+
+.search-container input.form-control:hover,
+.search-container input.form-control:focus {
+    cursor:pointer;
+    outline:4px solid rgb(from var(--bs-white) r g b / 20%);
+}
+
 
 
 /* banner alerts*/
@@ -797,6 +805,24 @@ section.comuni img {
     transform:scale(1.06);
 }
 
+/*mega search modal*/
+
+button#close-mega-search {
+    
+    position:absolute;
+    right:32px;
+    top:15px;
+}
+
+button#close-mega-search:hover {
+    cursor:pointer;
+}
+
+.modal-fullscreen .modal-content {
+    min-height: fit-content;
+}
+
+
 @media (max-width: 1220px) { 
 
     .bottoni-pre-header .btn:nth-child(1),
@@ -817,6 +843,11 @@ section.comuni img {
 
 
 @media (max-width: 991.98px) { 
+
+    .ccam-mega-search.modal,
+    .modal-backdrop.show {
+        display:none!important;
+    }
 
     .container-ccam {
         max-width:calc(100% - 32px);
