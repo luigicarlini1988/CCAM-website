@@ -1197,6 +1197,14 @@ button#close-mega-search:hover {
 
     }
 
+    .bread_crumbs.mob .breadcrumb-item+.breadcrumb-item::before {
+        color: rgb(from var(--bs-primary) r g b / 40%);
+    }
+
+    .bread_crumbs.mob .breadcrumb-item.active {
+        color:var(--bs-ccam-grey)!important;
+    }
+
 }
 
 
@@ -1208,7 +1216,7 @@ button#close-mega-search:hover {
     }
 
     .blu-big-icon {
-        padding: 2px, important !important;
+        padding: .3rem !important
     }
     .blu-big-icon svg {
         width:20px;
