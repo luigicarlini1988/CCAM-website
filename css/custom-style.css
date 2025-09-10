@@ -860,6 +860,12 @@ button#close-mega-search:hover {
     box-shadow: 0 0 0 .25rem rgba(0, 113, 204, .8);
 }
 
+.btn.btn-danger:focus,
+.btn.btn-danger:focus-visible {
+    box-shadow: 0 0 0 .25rem rgba(204, 0, 0, 0.7);
+}
+
+
 
 @media (max-width: 1220px) { 
 

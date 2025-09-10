@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it-IT">
 
 <head>
     <meta charset="UTF-8">
@@ -11,6 +11,9 @@
 </head>
 
 <body class="bg-ccam-offwhite">
+
+    <a href="#main" class="skip">Vai al contenuto principale</a>
+
     <header>
         <div class="pre-header py-16 px-32 bg-primary">
             <div class="pre-maxi d-flex justify-content-between d-flex justify-content-between">
@@ -18,10 +21,10 @@
 
                     <a href="#" aria-label="vai alla home page"><img src="images/ccam_logo.svg" alt="ccam_logo" /></a>
                     <div class="d-flex text-white">
-                        <p class="body-14 m-0">Servizio Clienti - lun/ven 8/20 - sab 8/13 <strong><a aria-label="Chiama Servizio Clienti" class="text-white link-underline link-underline-opacity-0" href="tel:800662255">800 66 22 55</a></strong></p>
+                        <p class="body-14 m-0">Servizio Clienti - lun/ven 8/20 - sab 8/13 <strong><a class="text-white link-underline link-underline-opacity-0" href="tel:800662255">800 66 22 55</a></strong></p>
                     </div>
                     <div class="d-flex text-white">
-                        <p class="body-14 m-0">Pronto Intervento 24/7 <strong><a aria-label="Chiama Pronto Intervento" class="text-white link-underline link-underline-opacity-0" href="tel:800915552">800 91 55 525</a></strong></p>
+                        <p class="body-14 m-0">Pronto Intervento 24/7 <strong><a class="text-white link-underline link-underline-opacity-0" href="tel:800915552">800 91 55 525</a></strong></p>
                     </div>
                 </div>
 
@@ -45,16 +48,17 @@
                             <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
                         </svg>
                     </button>
+
                 </div>
             </div>
         </div>
 
-        <div class="navigazione-reale">
+        <div class="navigazione-reale" role="dialog">
             <div class="container-fluid container-ccam">
-                <nav class="row ccam-nav navbar navbar-expand-lg bg-white">
+                <nav aria-label="Menu principale" class="row ccam-nav navbar navbar-expand-lg bg-white">
                     <div class="container-fluid">
                         <div class="logo-mobile d-block d-lg-none"><a href="#" aria-label="vai alla home page"><img src="images/ccam_logo.svg" alt="ccam_logo" /></a></div>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Menu">
                             <span class="navbar-toggler-icon"></span>
                         </button>
                         <div class="collapse navbar-collapse" id="navbarNavDropdown">
@@ -62,7 +66,7 @@
                                 <div class="search-container input-group mt-20 mb-32">
                                     <input type="text" aria-label="Carca nel sito" class="form-control search-input" placeholder="Cerca nel sito">
                                     <div class="search-icon stroke-2 text-white">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search">
+                                        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search">
                                             <circle cx="11" cy="11" r="8"></circle>
                                             <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
                                         </svg>
@@ -176,7 +180,8 @@
 
 
     </header>
-    <main>
+
+    <main id="main">
         <section id="home-hero" class="pt-28">
             <div class="header_home d-flex container-fluid container-ccam p-20 radius-40 bg-ccam-offwhite">
                 <div class="dark-glass align-self-end flex-grow-1 text-white px-20 py-16 radius-20">
@@ -198,7 +203,7 @@
                 <div class="row gap-12 p-12 p-md-16">
                     <div class="col-md p-0">
                         <div class="bg-danger text-white p-12 radius-18 stroke-2 d-flex gap-6 align-items-center">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-alert-triangle">
+                            <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-alert-triangle">
                                 <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path>
                                 <line x1="12" y1="9" x2="12" y2="13"></line>
                                 <line x1="12" y1="17" x2="12.01" y2="17"></line>
@@ -209,7 +214,7 @@
                     <div class="col-md p-0 d-flex align-items-center gap-12">
                         <div class="bg-ccam-offwhite text-ccam-black p-12 radius-18 stroke-2 d-flex flex-grow-1 align-items-center gap-6">
                             <span class="text-danger">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin">
+                                <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin">
                                     <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
                                     <circle cx="12" cy="10" r="3"></circle>
                                 </svg>
@@ -218,7 +223,7 @@
                             <p class="title-14 text-danger m-0">Zona3</p>
                         </div>
                         <a href="" aria-label="Piú informazioni sul disservizio" class="btn btn-danger icon-only d-flex align-items-center justify-content-center">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right">
+                            <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right">
                                 <line x1="5" y1="12" x2="19" y2="12"></line>
                                 <polyline points="12 5 19 12 12 19"></polyline>
                             </svg>
@@ -229,7 +234,7 @@
                     <div class="col-md p-0">
                         <div class="bg-ccam-offwhite text-ccam-black p-12 radius-18 stroke-2 d-flex flex-grow-1 align-items-center gap-6">
                             <span class="text-danger">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock">
+                                <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock">
                                     <circle cx="12" cy="12" r="10"></circle>
                                     <polyline points="12 6 12 12 16 14"></polyline>
                                 </svg>
@@ -242,7 +247,7 @@
                     <div class="col-md p-0">
                         <div class="bg-ccam-offwhite text-ccam-black p-12 radius-18 stroke-2 d-flex flex-grow-1 align-items-center gap-6">
                             <span class="text-danger">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock">
+                                <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock">
                                     <circle cx="12" cy="12" r="10"></circle>
                                     <polyline points="12 6 12 12 16 14"></polyline>
                                 </svg>
@@ -272,7 +277,7 @@
                             </div>
                             <div class="date_and_arrow d-flex align-items-center gap-8 stroke-2">
                                 <p class="title-16 text-primary m-0">Attiva la Bolletta Digitale</p>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right">
+                                <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right">
                                     <line x1="5" y1="12" x2="19" y2="12"></line>
                                     <polyline points="12 5 19 12 12 19"></polyline>
                                 </svg>
