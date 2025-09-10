@@ -12,6 +12,9 @@
 
 
 <body class="bg-ccam-offwhite">
+
+    <a href="#main" class="skip">Vai al contenuto principale</a>
+
     <header>
         <div class="pre-header py-16 px-32 bg-primary">
             <div class="pre-maxi d-flex justify-content-between d-flex justify-content-between">
@@ -19,10 +22,10 @@
 
                     <a href="#" aria-label="vai alla home page"><img src="images/ccam_logo.svg" alt="ccam_logo" /></a>
                     <div class="d-flex text-white">
-                        <p class="body-14 m-0">Servizio Clienti - lun/ven 8/20 - sab 8/13 <strong><a aria-label="Chiama Servizio Clienti" class="text-white link-underline link-underline-opacity-0" href="tel:800662255">800 66 22 55</a></strong></p>
+                        <p class="body-14 m-0">Servizio Clienti - lun/ven 8/20 - sab 8/13 <strong><a class="text-white link-underline link-underline-opacity-0" href="tel:800662255">800 66 22 55</a></strong></p>
                     </div>
                     <div class="d-flex text-white">
-                        <p class="body-14 m-0">Pronto Intervento 24/7 <strong><a aria-label="Chiama Pronto Intervento" class="text-white link-underline link-underline-opacity-0" href="tel:800915552">800 91 55 525</a></strong></p>
+                        <p class="body-14 m-0">Pronto Intervento 24/7 <strong><a class="text-white link-underline link-underline-opacity-0" href="tel:800915552">800 91 55 525</a></strong></p>
                     </div>
                 </div>
 
@@ -46,16 +49,17 @@
                             <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
                         </svg>
                     </button>
+
                 </div>
             </div>
         </div>
 
-        <div class="navigazione-reale">
+        <div class="navigazione-reale" role="dialog">
             <div class="container-fluid container-ccam">
-                <nav class="row ccam-nav navbar navbar-expand-lg bg-white">
+                <nav aria-label="Menu principale" class="row ccam-nav navbar navbar-expand-lg bg-white">
                     <div class="container-fluid">
                         <div class="logo-mobile d-block d-lg-none"><a href="#" aria-label="vai alla home page"><img src="images/ccam_logo.svg" alt="ccam_logo" /></a></div>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Menu">
                             <span class="navbar-toggler-icon"></span>
                         </button>
                         <div class="collapse navbar-collapse" id="navbarNavDropdown">
@@ -63,7 +67,7 @@
                                 <div class="search-container input-group mt-20 mb-32">
                                     <input type="text" aria-label="Carca nel sito" class="form-control search-input" placeholder="Cerca nel sito">
                                     <div class="search-icon stroke-2 text-white">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search">
+                                        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search">
                                             <circle cx="11" cy="11" r="8"></circle>
                                             <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
                                         </svg>
@@ -113,7 +117,7 @@
                                         Area Utenti
                                     </a>
                                     <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="#">Area Utenti</a></li>
+                                        <li><a class="dropdown-item" href="#">Voce di menu</a></li>
                                         <li><a class="dropdown-item" href="#">Voce di menu</a></li>
                                         <li><a class="dropdown-item" href="#">Voce di menu</a></li>
                                     </ul>
@@ -178,8 +182,19 @@
 
     </header>
 
-    <main>
+    <main id="main">
         <section id="top_header_interne" class="pt-28">
+
+            <!-- breadcrumb mobile -->
+            <div class="bread_crumbs mob d-flex d-md-none mb-auto pt-8 px-20 pb-20">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb m-0">
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Contatti</li>
+                    </ol>
+                </nav>
+            </div>
+
             <div class="header_interne container-fluid container-ccam d-flex p-12 p-md-20 radius-40 bg-white position-relative overflow-hidden">
                 <img src="images/contatti.jpg" alt="" />
                 <div class="position-relative d-flex flex-column z-2 flex-grow-1 justify-content-end">
@@ -197,6 +212,13 @@
                     </div>
                 </div>
             </div>
+
+            <!-- sottotitolo mobile -->
+            <div class="sottotitolo-schermi-piccoli d-block d-md-none p-0 pt-20 container-fluid container-ccam ">
+                <div class="p-16 radius-20 bg-white">
+                    <p class="title-22 text-ccam-black m-0">Sottotitolo lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                </div>
+            </div>
         </section>
 
         <section class="numeru_utili pt-28">
@@ -210,7 +232,7 @@
                     <div class="col-lg-3 mt-lg-0 p-0">
                         <a class="link-underline link-underline-opacity-0" href="tel:800662255">
                             <div class="numerone d-flex gap-12 align-items-center p-12 bg-secondary text-white radius-18 stroke-2">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-phone-call">
+                                <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-phone-call">
                                     <path d="M15.05 5A5 5 0 0 1 19 8.95M15.05 1A9 9 0 0 1 23 8.94m-1 7.98v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
                                 </svg>
                                 <p class="title-22 text-white m-0">800 66 22 55</p>
@@ -224,7 +246,7 @@
                         <div class="bg-ccam-offwhite text-ccam-black p-12 radius-18 stroke-2 d-flex flex-column flex-md-row flex-grow-1 gap-8">
                             <div class="d-flex align-items-center gap-6">
                                 <span class="text-primary">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock">
+                                    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock">
                                         <circle cx="12" cy="12" r="10"></circle>
                                         <polyline points="12 6 12 12 16 14"></polyline>
                                     </svg>
@@ -242,7 +264,7 @@
                         <div class="bg-ccam-offwhite text-ccam-black p-12 radius-18 stroke-2 d-flex flex-column flex-md-row flex-grow-1 gap-8">
                             <div class="d-flex align-items-center gap-6">
                                 <span class="text-primary">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock">
+                                    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock">
                                         <circle cx="12" cy="12" r="10"></circle>
                                         <polyline points="12 6 12 12 16 14"></polyline>
                                     </svg>
@@ -262,7 +284,7 @@
                         <div class="bg-ccam-offwhite text-ccam-black p-12 radius-18 stroke-2 d-flex flex-column flex-md-row flex-grow-1 gap-8">
                             <div class="d-flex align-items-center gap-6">
                                 <span class="text-primary">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin">
+                                    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin">
                                         <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
                                         <circle cx="12" cy="10" r="3"></circle>
                                     </svg>
@@ -283,7 +305,7 @@
                     <div class="col-lg p-12 p-.d-16 radius-24 bg-white text-ccam-black">
                         <div class="d-flex align-items-center gap-6 stroke-2">
                             <span class="text-primary">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin">
+                                <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin">
                                     <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
                                     <circle cx="12" cy="10" r="3"></circle>
                                 </svg>
@@ -298,7 +320,7 @@
                     <div class="col-lg p-12 p-.d-16 radius-24 bg-white text-ccam-black">
                         <div class="d-flex align-items-center gap-6 stroke-2">
                             <span class="text-primary">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-printer">
+                                <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-printer">
                                     <polyline points="6 9 6 2 18 2 18 9"></polyline>
                                     <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
                                     <rect x="6" y="14" width="12" height="8"></rect>
@@ -314,7 +336,7 @@
                     <div class="col-lg p-12 p-.d-16 radius-24 bg-white text-ccam-black">
                         <div class="d-flex align-items-center gap-6 stroke-2">
                             <span class="text-primary">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail">
+                                <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail">
                                     <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
                                     <polyline points="22,6 12,13 2,6"></polyline>
                                 </svg>
@@ -329,7 +351,7 @@
                     <div class="col-lg p-12 p-.d-16 radius-24 bg-white text-ccam-black">
                         <div class="d-flex align-items-center gap-6 stroke-2">
                             <span class="text-primary">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail">
+                                <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail">
                                     <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
                                     <polyline points="22,6 12,13 2,6"></polyline>
                                 </svg>
@@ -354,7 +376,7 @@
                     <div class="col-lg-3 mt-lg-0 p-0">
                         <a class="link-underline link-underline-opacity-0" href="tel:800915552">
                             <div class="numerone d-flex gap-12 align-items-center p-12 bg-secondary text-white radius-18 stroke-2">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-phone-call">
+                                <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-phone-call">
                                     <path d="M15.05 5A5 5 0 0 1 19 8.95M15.05 1A9 9 0 0 1 23 8.94m-1 7.98v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
                                 </svg>
                                 <p class="title-22 text-white m-0">800 91 55 52</p>
@@ -368,7 +390,7 @@
                         <div class="bg-ccam-offwhite text-ccam-black p-12 radius-18 stroke-2 d-flex flex-column flex-md-row flex-grow-1 gap-8">
                             <div class="d-flex align-items-center gap-6">
                                 <span class="text-primary">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock">
+                                    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock">
                                         <circle cx="12" cy="12" r="10"></circle>
                                         <polyline points="12 6 12 12 16 14"></polyline>
                                     </svg>
@@ -394,7 +416,7 @@
                         <div class="bg-ccam-offwhite text-ccam-black p-12 radius-18 stroke-2 d-flex flex-column flex-md-row flex-grow-1 gap-8">
                             <div class="d-flex align-items-center gap-6">
                                 <span class="text-primary">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin">
+                                    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin">
                                         <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
                                         <circle cx="12" cy="10" r="3"></circle>
                                     </svg>
@@ -409,7 +431,7 @@
                     <div class="col-lg-3 mt-lg-0 p-0">
                         <a class="link-underline link-underline-opacity-0" href="tel:800403565">
                             <div class="numerone d-flex gap-12 align-items-center p-12 bg-secondary text-white radius-18 stroke-2">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-phone-call">
+                                <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-phone-call">
                                     <path d="M15.05 5A5 5 0 0 1 19 8.95M15.05 1A9 9 0 0 1 23 8.94m-1 7.98v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
                                 </svg>
                                 <p class="title-22 text-white m-0">800 40 35 65</p>
@@ -423,7 +445,7 @@
                         <div class="bg-ccam-offwhite text-ccam-black p-12 radius-18 stroke-2 d-flex flex-column flex-md-row flex-grow-1 gap-8">
                             <div class="d-flex align-items-center gap-6">
                                 <span class="text-primary">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin">
+                                    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin">
                                         <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
                                         <circle cx="12" cy="10" r="3"></circle>
                                     </svg>
@@ -438,7 +460,7 @@
                     <div class="col-lg-3 mt-lg-0 p-0">
                         <a class="link-underline link-underline-opacity-0" href="tel:800553315">
                             <div class="numerone d-flex gap-12 align-items-center p-12 bg-secondary text-white radius-18 stroke-2">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-phone-call">
+                                <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-phone-call">
                                     <path d="M15.05 5A5 5 0 0 1 19 8.95M15.05 1A9 9 0 0 1 23 8.94m-1 7.98v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
                                 </svg>
                                 <p class="title-22 text-white m-0">800 55 33 15</p>
@@ -452,7 +474,7 @@
                         <div class="bg-ccam-offwhite text-ccam-black p-12 radius-18 stroke-2 d-flex flex-column flex-md-row flex-grow-1 gap-8">
                             <div class="d-flex align-items-center gap-6">
                                 <span class="text-primary">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock">
+                                    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock">
                                         <circle cx="12" cy="12" r="10"></circle>
                                         <polyline points="12 6 12 12 16 14"></polyline>
                                     </svg>
@@ -486,7 +508,7 @@
                         <iframe title="indicazioni per Via Senatore Ferraris 3 a Moncalvo (At))" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2818.6570395366653!2d8.258520176826195!3d45.05218107107022!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4787bf1153207ecf%3A0xff8c06314a16cd27!2sConsorzio%20dei%20Comuni%20per%20l&#39;Acquedotto%20del%20Monferrato!5e0!3m2!1sen!2sit!4v1757018451019!5m2!1sen!2sit" width="600" height="450" style="border:0;" allowfullscreen=""
                             loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         <div class="pt-20">
-                            <p class="title-22 text-ccam-black m-0">Moncalvo (At)</p>
+                            <h3 class="title-22 text-ccam-black m-0">Moncalvo (At)</h3>
                             <p class="title-16 text-primary">Via Senatore Ferraris 3</p>
                             <p class="text-ccam-gray">Lun/Ven - 8.30 > 16.30<br>
                                 Sab - 8.30 > 12.30<br>
@@ -499,7 +521,7 @@
                         <iframe title="indicazioni per Via Crispi 23 a Casale Monferrato (AL)" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2814.7158871579727!2d8.451229291398057!3d45.13209279647797!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4787a55e82502981%3A0x8a61c8b0f613681d!2sViale%20Crispi%2C%2023%2C%2015033%20Casale%20Monferrato%20AL!5e0!3m2!1sen!2sit!4v1757018925044!5m2!1sen!2sit" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                             referrerpolicy="no-referrer-when-downgrade"></iframe>
                         <div class="pt-20">
-                            <p class="title-22 text-ccam-black m-0">Casale Monferrato (AL)</p>
+                            <h3 class="title-22 text-ccam-black m-0">Casale Monferrato (AL)</h3>
                             <p class="title-16 text-primary">Via Crispi 23</p>
                             <p class="text-ccam-gray">Mar/Mer/Ven - 8.30 > 12.30<br>
                                 Non è possibile effettuare pagamenti<br>
@@ -511,7 +533,7 @@
                         <iframe title="indicazioni per Località Rocca 118 a Verrua Savoia (To)" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2807.687336062831!2d7.977971476836015!3d45.27433077107149!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4787d44d58d6e367%3A0x47a55306e857b485!2sLocalita&#39;%20La%20Rocca%2C%20118%2C%2010030%20Rocca%20TO!5e0!3m2!1sen!2sit!4v1757018980542!5m2!1sen!2sit" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                             referrerpolicy="no-referrer-when-downgrade"></iframe>
                         <div class="pt-20">
-                            <p class="title-22 text-ccam-black m-0">Verrua Savoia (To)</p>
+                            <h3 class="title-22 text-ccam-black m-0">Verrua Savoia (To)</h3>
                             <p class="title-16 text-primary">Località Rocca 118</p>
                             <p class="text-ccam-gray">Mar/Mer/Ven - 8.30 > 12.30<br>
                                 Non è possibile effettuare pagamenti<br>
@@ -584,7 +606,7 @@
                     </p>
                     <div class="row gap-20 gap-lg-0 mt-40">
                         <div class="col-md m-0">
-                            <p class="text-white title-20 m-0">Servizio Clienti</p>
+                            <h3 class="text-white title-20 m-0">Servizio Clienti</h3>
                             <p class="text-white fw-light my-6">
                                 Lunedi - Venerdi 9:00 - 20:00<br>
                                 Sabato 8:00 - 13:00<br>
@@ -592,7 +614,7 @@
                             </p>
                         </div>
                         <div class="col-md m-0">
-                            <p class="text-white title-20 m-0">Pronto Intervento</p>
+                            <h3 class="text-white title-20 m-0">Pronto Intervento</h3>
                             <p class="text-white fw-light my-6">
                                 Attivo 24 ore su 24 <br>
                                 7 giorni su 7 <br>
@@ -602,7 +624,7 @@
                     </div>
                 </div>
                 <div class="col-lg-5 gap-28 gap-lg-0 m-0 d-flex flex-column">
-                    <nav class="mb-auto">
+                    <nav aria-label="Menu del footer" class="mb-auto">
                         <ul class="nav row row-cols-2">
                             <li class="nav-item col py-1">
                                 <a class=" text-white link-underline link-underline-opacity-0 py-1" href="">Home</a>
@@ -655,7 +677,7 @@
         <div class="bg-ccam-black container-fluid container-ccam py-16 px-20 radius-32">
             <div class="d-flex justify-content-between align-items-center">
                 <p class="body-14 text-ccam-grey-light m-0">Copyright © 2025 Consorzio Comuni Acquedotto Monferrato. Tutti i diritti riservati.</p>
-                <nav>
+                <nav aria-label="Menu legale">
                     <ul class="nav nav gap-2 gap-sm-20">
                         <li class="nav-item">
                             <a class="text-white link-underline link-underline-opacity-0 title-14" href="">Cookie</a>
@@ -677,7 +699,7 @@
         <div class="container-fluid container-ccam mt-20 d-flex justify-content-end">
             <div class="trigloo d-flex gap-12 align-items-center">
                 <p class="body-12 text-ccam-grey m-0">Powered by</p>
-                <svg width="80" height="17" viewBox="0 0 80 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg role="img" aria-label="trigloo" width="80" height="17" viewBox="0 0 80 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M10.5015 4.03662H0V6.99228H3.56425V16.3813H6.95471V6.99228H10.5015V4.03662Z" fill="#0F191E" />
                     <path
                         d="M15.856 16.3813V12.5908H17.456L18.795 16.3813H22.2894L20.5156 11.8434C21.0721 11.4494 21.5067 10.942 21.8197 10.3219C22.1327 9.70194 22.2891 9.03248 22.2891 8.31358C22.2891 7.79205 22.1847 7.27354 21.9762 6.7575C21.7675 6.242 21.4806 5.78378 21.1155 5.38389C20.7503 4.98424 20.3126 4.65973 19.8028 4.41043C19.2927 4.16121 18.7362 4.03662 18.1336 4.03662H12.4655V16.3813H15.856ZM15.856 6.84635H17.9076C18.1162 6.84635 18.3248 6.95933 18.5335 7.1853C18.7421 7.41141 18.8465 7.88483 18.8465 8.31361C18.8465 8.7311 18.7567 9.17659 18.5769 9.40832C18.3972 9.64028 18.2031 9.75616 17.9945 9.75616H15.856V6.84635Z"
@@ -700,6 +722,43 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        // Add event listener to the 'keydown' event on the document
+        document.addEventListener("keydown", function (e) {
+            const target = e.target;
+            const shiftPressed = e.shiftKey;
+
+            // If TAB key pressed
+            if (e.keyCode === 9) {
+                // If inside a fullscreen menu (determined by attribute role="dialog")
+                if (target.closest('[role="dialog"]')) {
+                    // Find the first or the last input element in the dialog parent (depending on whether Shift was pressed).
+                    // Get the focusable elements (links and buttons)
+                    let focusElements = target
+                        .closest('[role="dialog"]')
+                        .querySelectorAll("a[href], button");
+                    let borderElem = shiftPressed
+                        ? focusElements[0]
+                        : focusElements[focusElements.length - 1];
+
+                    if (borderElem) {
+                        // If the current target element is the first or last focusable element in the dialog, prevent the default behaviour.
+                        if (target === borderElem) {
+                            e.preventDefault();
+
+                            // move focus to the first element when the last one is reached and vice versa
+                            borderElem === focusElements[0]
+                                ? focusElements[focusElements.length - 1].focus()
+                                : focusElements[0].focus();
+                        }
+                    }
+                }
+            }
+        });
+    </script>
+
+
 
 </body>
 
