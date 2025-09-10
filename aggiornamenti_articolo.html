@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it-IT">
 
 <head>
     <meta charset="UTF-8">
@@ -11,6 +11,9 @@
 </head>
 
 <body class="bg-ccam-offwhite">
+
+    <a href="#main" class="skip">Vai al contenuto principale</a>
+
     <header>
         <div class="pre-header py-16 px-32 bg-primary">
             <div class="pre-maxi d-flex justify-content-between d-flex justify-content-between">
@@ -18,10 +21,10 @@
 
                     <a href="#" aria-label="vai alla home page"><img src="images/ccam_logo.svg" alt="ccam_logo" /></a>
                     <div class="d-flex text-white">
-                        <p class="body-14 m-0">Servizio Clienti - lun/ven 8/20 - sab 8/13 <strong><a aria-label="Chiama Servizio Clienti" class="text-white link-underline link-underline-opacity-0" href="tel:800662255">800 66 22 55</a></strong></p>
+                        <p class="body-14 m-0">Servizio Clienti - lun/ven 8/20 - sab 8/13 <strong><a class="text-white link-underline link-underline-opacity-0" href="tel:800662255">800 66 22 55</a></strong></p>
                     </div>
                     <div class="d-flex text-white">
-                        <p class="body-14 m-0">Pronto Intervento 24/7 <strong><a aria-label="Chiama Pronto Intervento" class="text-white link-underline link-underline-opacity-0" href="tel:800915552">800 91 55 525</a></strong></p>
+                        <p class="body-14 m-0">Pronto Intervento 24/7 <strong><a class="text-white link-underline link-underline-opacity-0" href="tel:800915552">800 91 55 525</a></strong></p>
                     </div>
                 </div>
 
@@ -45,16 +48,17 @@
                             <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
                         </svg>
                     </button>
+
                 </div>
             </div>
         </div>
 
-        <div class="navigazione-reale">
+        <div class="navigazione-reale" role="dialog">
             <div class="container-fluid container-ccam">
-                <nav class="row ccam-nav navbar navbar-expand-lg bg-white">
+                <nav aria-label="Menu principale" class="row ccam-nav navbar navbar-expand-lg bg-white">
                     <div class="container-fluid">
                         <div class="logo-mobile d-block d-lg-none"><a href="#" aria-label="vai alla home page"><img src="images/ccam_logo.svg" alt="ccam_logo" /></a></div>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Menu">
                             <span class="navbar-toggler-icon"></span>
                         </button>
                         <div class="collapse navbar-collapse" id="navbarNavDropdown">
@@ -62,7 +66,7 @@
                                 <div class="search-container input-group mt-20 mb-32">
                                     <input type="text" aria-label="Carca nel sito" class="form-control search-input" placeholder="Cerca nel sito">
                                     <div class="search-icon stroke-2 text-white">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search">
+                                        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search">
                                             <circle cx="11" cy="11" r="8"></circle>
                                             <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
                                         </svg>
@@ -112,7 +116,7 @@
                                         Area Utenti
                                     </a>
                                     <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="#">Area Utenti</a></li>
+                                        <li><a class="dropdown-item" href="#">Voce di menu</a></li>
                                         <li><a class="dropdown-item" href="#">Voce di menu</a></li>
                                         <li><a class="dropdown-item" href="#">Voce di menu</a></li>
                                     </ul>
@@ -176,8 +180,22 @@
 
 
     </header>
-    <main>
+
+    <main id="main">
         <section class="article_details pt-28">
+
+            <!-- breadcrumb mobile -->
+            <div class="bread_crumbs mob d-flex d-md-none mb-auto pt-8 px-20 pb-20">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb m-0">
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item"><a href="#">Aggiornamenti</a></li>
+                        <li class="breadcrumb-item"><a href="#">News</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Articolo</li>
+                    </ol>
+                </nav>
+            </div>
+
             <div class="container-fluid container-ccam p-0">
                 <div class="row">
                     <div class="col-lg-9">
@@ -201,12 +219,6 @@
                                 <div class="row p-0">
                                     <div class="col p-16 p-lg-32 bg-white radius-28 d-flex flex-column gap-12">
                                         <div class="d-flex justify-content-between align-items-center pb-16">
-                                            <a href="" class="align-items-center d-flex d-md-none gap-2 btn btn-secondary icon-only">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-left">
-                                                    <line x1="19" y1="12" x2="5" y2="12"></line>
-                                                    <polyline points="12 19 5 12 12 5"></polyline>
-                                                </svg>
-                                            </a>
                                             <p class="title-14 text-primary m-0">14 maggio 2025</p>
                                         </div>
                                         <h1 class="title-32 text-ccam-black">Consorzio dei Comuni per l'Acquedotto del Monferrato appartenenti</h1>
