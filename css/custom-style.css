@@ -255,6 +255,7 @@ section h1,
 .ccam-nav .nav-item {
     padding: 0 !important;
     border-radius: 300px;
+    transition: .3s all ease;
 }
 
 .ccam-nav .nav-item:hover {
@@ -851,6 +852,11 @@ button#close-mega-search:hover {
     min-height: fit-content;
 }
 
+.nav-link:focus-visible {
+    outline: 0;
+    box-shadow: 0 0 0 .25rem rgba(0, 113, 204, .8);
+}
+
 
 @media (max-width: 1220px) { 
 
@@ -919,7 +925,7 @@ button#close-mega-search:hover {
     }
 
     .navbar-toggler:focus {
-        box-shadow: 0 0 0 1px rgb(from var(--bs-white) r g b / 33%);
+        box-shadow: 0 0 0 1px rgb(from var(--bs-white) r g b / 88%);
 
     }
 
@@ -1073,10 +1079,36 @@ button#close-mega-search:hover {
     .consorzio-oggi .light-white-image  {
         background:none!important;
     }
+
+     .skip:focus {
+        position: fixed;
+        width: auto;
+        height: auto;
+        padding-top: 15px;
+        left: 140px;
+        color: #FFF !important;
+        z-index: 200000;
+    }
+
+    a.nav-link:focus-visible {
+        outline: 0;
+        box-shadow: 0 0 0 .25rem rgba(255, 255, 255, .75);
+        margin-left:4px;
+        margin-right:4px;
+    }
+
+    a.dropdown-item:focus-visible {
+        outline: 0;
+        box-shadow: 0 0 0 .25rem rgba(255, 255, 255, .75);
+        margin-left:4px;
+        margin-right:4px;
+    }
 }
 
 
 @media (max-width: 767.98px) { 
+
+   
 
     .header_home,
     .header_interne {
@@ -1168,4 +1200,27 @@ button#close-mega-search:hover {
 }
 
 
+@media (max-width: 360px) { 
 
+    .linkoni {
+        padding:6px!important;
+        gap: 4px!important;
+    }
+
+    .blu-big-icon {
+        padding: 2px, important !important;
+    }
+    .blu-big-icon svg {
+        width:20px;
+        height:20px;
+    }
+
+    .arrow-linkone {
+        position: absolute;
+        right: 6px;
+        top: calc(50% - 12px);
+        transition: .3s all ease;
+    }
+
+
+}
