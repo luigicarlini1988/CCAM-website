@@ -303,7 +303,7 @@ section h1,
 
 .header_home {
     height: 360px;
-    background: linear-gradient(to top, rgb(from var(--bs-secondary) r g b / 60%), rgb(from var(--bs-secondary) r g b / 10%)), url(../images/header_home_2.jpg);
+    background: linear-gradient(to top, rgb(from var(--bs-secondary) r g b / 60%), rgb(from var(--bs-secondary) r g b / 10%)), url(../images/OLD_header_home.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -578,6 +578,32 @@ footer ul li:hover a {
     outline:4px solid rgb(from var(--bs-white) r g b / 20%);
 }
 
+
+/*mega search*/
+
+.ccam-mega-search .form-control {
+    background-color: rgb(from var(--bs-white) r g b / 100%);
+    color:var(--bs-primary);
+    border-radius:100px!important;
+
+
+}
+
+.ccam-mega-search .form-control:focus {
+    background-color: rgb(from var(--bs-white) r g b / 100%);
+    color:var(--bs-primary);
+    border-radius:100px!important;
+
+
+}
+
+.ccam-mega-search .form-control::placeholder {
+    color:var(--bs-ccam-grey);
+}
+
+.ccam-mega-search .form-control:focus::placeholder {
+    color:var(--bs-primary);
+}
 
 
 /* banner alerts*/
