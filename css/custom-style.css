@@ -646,6 +646,51 @@ footer ul li:hover a {
     background:var(--bs-white)!important;
 }
 
+#editoriale-banner .desktop-new {
+
+ .banner-img-wrap {
+    height:200px;
+    position:relative;
+    overflow:hidden;
+   
+        img {
+            position:absolute;
+            top:-2px;
+            left:-2px;
+            width:calc(100% + 4px);
+            height:calc(100% + 4px );
+            object-fit: cover;
+            transition:.3s all ease;
+        }
+
+    }
+
+ .edi-banner-back {
+        background: url('../images/blularge.jpg') no-repeat center center / cover;
+
+    }
+ .stroke-2 {
+    transition:.3s all ease;
+ }      
+
+}
+
+#editoriale-banner .desktop-new:hover {
+
+    img {
+        transform:scale(1.04);
+    }
+    .stroke-2 {
+        transform:translate(4px);
+        background-color:var(--bs-white);
+
+        svg {
+            color:var(--bs-primary)!important;
+        }
+    }
+}
+
+
 .accedi_mega_button {
     background:url('../images/pdfbackgrounds.jpg') no-repeat center center / cover;
 }
@@ -792,6 +837,10 @@ footer ul li:hover a {
     color:var(--bs-white)!important;
 }
 
+.table-striped>tbody>tr:nth-of-type(odd)>* {
+    --bs-table-bg-type: rgba(var(--bs-emphasis-color-rgb), 0.03)!important;
+}
+
 .accordion-item:first-of-type>.accordion-header .accordion-button {
     border-top-left-radius: 1.4rem;
     border-top-right-radius: 1.4rem;
@@ -891,6 +940,11 @@ button#close-mega-search:hover {
     box-shadow: 0 0 0 .25rem rgba(204, 0, 0, 0.7);
 }
 
+/* articoli wordpress */
+
+.wp-block-heading { 
+    color: var(--bs-ccam-black); font-weight: 600; 
+}
 
 
 @media (max-width: 1220px) { 
