@@ -909,6 +909,11 @@ section.comuni img {
     transform:scale(1.06);
 }
 
+.article_details aside div.d-flex.flex-column {
+    position: sticky;
+    top: 20px;
+}
+
 /*mega search modal*/
 
 button#close-mega-search {
