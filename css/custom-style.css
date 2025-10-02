@@ -755,6 +755,15 @@ footer ul li:hover a {
     color:var(--bs-ccam-grey);
 }
 
+.area-utenti.listona_links li a {
+    padding-top:4.6px!important;
+    padding-bottom:4.6px!important;
+}
+
+.area-utenti.listona_links li a.kerning-small{
+    letter-spacing:-0.8px;
+}
+
 .listona_links li.nav-item a,
 .sommario_links li.nav-item a {
     transition: .3s all ease;
