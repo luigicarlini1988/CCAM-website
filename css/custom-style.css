@@ -651,13 +651,12 @@ footer ul li:hover a {
  .banner-img-wrap {
     height:200px;
     position:relative;
-    overflow:hidden;
    
         img {
             position:absolute;
             top:-2px;
-            left:-2px;
-            width:calc(100% + 4px);
+            left:-32px;
+            width:calc(100% + 32px);
             height:calc(100% + 4px );
             object-fit: cover;
             transition:.3s all ease;
