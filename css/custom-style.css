@@ -447,6 +447,28 @@ a.card-widget:hover img {
     height: 30px;
 }
 
+.avvisi-portlet-header .side .fre {
+    opacity:0;
+    transform:translateX(-4px);
+}
+
+.avvisi-portlet-header .side .text-ccam-black,
+.avvisi-portlet-header .side .fre{
+    transition: .3s ease all;
+}
+
+.avvisi-portlet-header .side:hover { 
+    .text-ccam-black {
+        color:var(--primary)!important;
+    }
+
+    .fre {
+        opacity:1;
+        transform:translateX(0px);
+    }
+}
+
+
 .avvisi-lista {
     height: -webkit-fill-available;
     max-height: 255px;
