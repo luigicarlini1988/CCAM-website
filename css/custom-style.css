@@ -559,6 +559,10 @@ footer ul li:hover a {
     text-decoration: underline !important;
 }
 
+footer .fw-bold a:hover {
+    text-decoration:underline!important;
+}
+
 
 
 /*input and forms*/
