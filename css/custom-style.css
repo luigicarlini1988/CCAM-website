@@ -152,6 +152,10 @@ section h1,
     line-height: 1rem;
 }
 
+p:last-child {
+    margin-bottom: 0;
+}
+
 .container-ccam {
     margin-left: auto;
     margin-right: auto;
