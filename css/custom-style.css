@@ -1206,6 +1206,7 @@ button#close-mega-search:hover {
 
     .avvisi-lista {
         max-height:none;
+        height:auto;
     }
 
     .consorzio-oggi .light-white-image  {
