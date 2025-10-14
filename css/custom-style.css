@@ -991,10 +991,6 @@ button#close-mega-search:hover {
 
 /* wordpress adminbar fixes */
 
-body.logged-in header {
-    top: 32px;
-}
-
 body.logged-in {
     .modal-fullscreen .modal-content {
         padding-top: 40px !important;
