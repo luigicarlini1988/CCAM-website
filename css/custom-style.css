@@ -1087,7 +1087,7 @@ button#close-mega-search:hover {
     }
 
     .navbar-collapse {
-        padding:12px 0px 40px 0px;
+        padding:12px 0px 100px 0px;
     }
 
     .ccam-nav .nav-item:has(.nav-link.active) {
