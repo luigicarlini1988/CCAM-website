@@ -989,6 +989,34 @@ button#close-mega-search:hover {
     color: var(--bs-ccam-black); font-weight: 600; 
 }
 
+/* wordpress adminbar fixes */
+
+body.logged-in header {
+    top: 32px;
+}
+
+body.logged-in {
+    .modal-fullscreen .modal-content {
+        padding-top: 40px !important;
+    } 
+    button#close-mega-search {
+        top:45px!important;
+    }
+}
+
+
+@media (max-width: 991.98px) { 
+    body.logged-in header {
+        top: 32px;
+    }
+}
+
+@media (max-width: 783px) { 
+    body.logged-in header {
+        top: 46px;
+    }
+}
+
 
 @media (max-width: 1220px) { 
 
