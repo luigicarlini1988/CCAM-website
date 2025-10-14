@@ -1158,12 +1158,6 @@ body.logged-in {
         z-index:2000;
     }
 
-    body.logged-in header {
-        position: fixed;
-        top: 32px;
-        width:100%;
-        z-index:2000;
-    }
 
     .navbar-collapse.collapse.show{
         height: calc(100dvh - 54px);
@@ -1259,13 +1253,6 @@ body.logged-in {
         margin-right:4px;
     }
 }
-
-@media (max-width: 783px) { 
-    body.logged-in header {
-        top: 46px;
-    }
-}
-
 
 
 @media (max-width: 767.98px) { 
