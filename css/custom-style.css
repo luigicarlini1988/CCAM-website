@@ -1001,17 +1001,8 @@ body.logged-in {
 }
 
 
-@media (max-width: 991.98px) { 
-    body.logged-in header {
-        top: 32px;
-    }
-}
 
-@media (max-width: 783px) { 
-    body.logged-in header {
-        top: 46px;
-    }
-}
+
 
 
 @media (max-width: 1220px) { 
@@ -1167,6 +1158,13 @@ body.logged-in {
         z-index:2000;
     }
 
+    body.logged-in header {
+        position: fixed;
+        top: 32px;
+        width:100%;
+        z-index:2000;
+    }
+
     .navbar-collapse.collapse.show{
         height: calc(100dvh - 54px);
         overflow-y: scroll;
@@ -1261,6 +1259,13 @@ body.logged-in {
         margin-right:4px;
     }
 }
+
+@media (max-width: 783px) { 
+    body.logged-in header {
+        top: 46px;
+    }
+}
+
 
 
 @media (max-width: 767.98px) { 
