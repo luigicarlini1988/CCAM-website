@@ -313,7 +313,7 @@ p:last-child {
 }
 
 .dark-glass {
-    background: rgb(from var(--bs-ccam-black) r g b / 40%);
+    background: rgb(from var(--bs-ccam-black) r g b / 50%);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
 }
@@ -744,6 +744,16 @@ footer .fw-bold a:hover {
     left:0;
     top:0;
     background:linear-gradient(to top, rgb(from var(--bs-ccam-black) r g b / 60%), rgb(from var(--bs-ccam-black) r g b / 20%) 50%);
+}
+
+.header_interne > div:last-child::before{
+    content: "";
+    position: absolute;
+    width:calc(100% + 60px);
+    height:calc(100% + 60px);
+    left:-30px;
+    top:-30px;
+    background:linear-gradient(to bottom, rgb(from var(--bs-ccam-black) r g b / 40%), rgb(from var(--bs-ccam-black) r g b / 0%) 50%);
 }
 
 .header_interne img {
